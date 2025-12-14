@@ -109,6 +109,7 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 64px;
+  gap: var(--space-md);
 }
 
 .logo {
@@ -121,11 +122,13 @@ a {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: var(--space-lg);
+  gap: var(--space-md);
+  flex: 1;
+  justify-content: center;
 }
 
 .nav-links a {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 500;
   color: var(--color-text-secondary);
   transition: color var(--transition-fast);
@@ -133,6 +136,38 @@ a {
 
 .nav-links a:hover {
   color: var(--color-text);
+}
+
+/* Language Toggle */
+.lang-toggle {
+  display: flex;
+  background: var(--color-bg-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 4px;
+  gap: 4px;
+}
+
+.lang-btn {
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border: none;
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.lang-btn:hover {
+  color: var(--color-text);
+}
+
+.lang-btn.active {
+  background: var(--color-text);
+  color: white;
 }
 
 .mobile-menu-btn {
@@ -170,6 +205,22 @@ a {
 .hero-content {
   max-width: 600px;
   animation: fadeIn 0.8s ease-out;
+}
+
+.hero-image {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto var(--space-lg);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--color-bg-white);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero-name {
@@ -246,6 +297,13 @@ a {
   font-weight: 700;
   letter-spacing: -0.02em;
   margin-bottom: var(--space-xl);
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  margin-top: calc(var(--space-xl) * -1 + var(--space-sm));
+  margin-bottom: var(--space-lg);
 }
 
 /* ===================================
@@ -356,7 +414,7 @@ a {
 }
 
 /* ===================================
-   Portfolio Section
+   Portfolio Section (Data Projects)
    =================================== */
 .portfolio {
   background: var(--color-bg);
@@ -432,10 +490,75 @@ a {
 }
 
 /* ===================================
-   Blog Section
+   Other Projects Section
+   =================================== */
+.other-projects {
+  background: var(--color-bg-white);
+}
+
+.external-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+}
+
+.external-link-card {
+  display: flex;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-base);
+}
+
+.external-link-card:hover {
+  border-color: var(--color-primary);
+  background: var(--color-bg-white);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.external-link-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-white);
+  border-radius: var(--radius-md);
+}
+
+.external-link-icon svg {
+  width: 24px;
+  height: 24px;
+  color: var(--color-primary);
+}
+
+.external-link-content h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.external-link-content p {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xs);
+}
+
+.external-link-url {
+  font-size: 0.75rem;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+/* ===================================
+   Blog Section (Articles)
    =================================== */
 .blog {
-  background: var(--color-bg-white);
+  background: var(--color-bg);
 }
 
 .blog-list {
@@ -493,7 +616,7 @@ a {
    Contact Section
    =================================== */
 .contact {
-  background: var(--color-bg);
+  background: var(--color-bg-white);
   text-align: center;
 }
 
@@ -672,6 +795,14 @@ a {
   .portfolio-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  .nav-links {
+    gap: var(--space-sm);
+  }
+  
+  .nav-links a {
+    font-size: 0.8125rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -748,6 +879,10 @@ a {
     max-width: 200px;
     justify-content: center;
   }
+  
+  .external-links-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 480px) {
@@ -757,5 +892,10 @@ a {
   
   .section {
     padding: var(--space-xl) 0;
+  }
+  
+  .hero-image {
+    width: 120px;
+    height: 120px;
   }
 }

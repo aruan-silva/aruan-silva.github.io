@@ -1,5 +1,5 @@
 /**
- * Clean, modern interactions
+ * Clean, modern interactions with language toggle
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSmoothScroll();
   initNavHighlight();
   initMobileMenu();
+  initLanguageToggle();
 });
 
 /**
@@ -59,7 +60,7 @@ function initSmoothScroll() {
  */
 function initNavHighlight() {
   const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav-links a:not(.nav-cta)');
+  const navLinks = document.querySelectorAll('.nav-links a');
   
   const updateActive = () => {
     const scrollPos = window.scrollY + 150;
@@ -106,5 +107,61 @@ function initMobileMenu() {
   btn.addEventListener('click', () => {
     nav.classList.toggle('open');
     btn.classList.toggle('open');
+  });
+}
+
+/**
+ * Language Toggle (PT/EN)
+ */
+function initLanguageToggle() {
+  const langButtons = document.querySelectorAll('.lang-btn');
+  const savedLang = localStorage.getItem('language') || 'en';
+  
+  // Apply saved language on load
+  setLanguage(savedLang);
+  
+  // Update button states
+  langButtons.forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.lang === savedLang);
+    
+    btn.addEventListener('click', () => {
+      const lang = btn.dataset.lang;
+      setLanguage(lang);
+      localStorage.setItem('language', lang);
+      
+      // Update button states
+      langButtons.forEach(b => b.classList.toggle('active', b === btn));
+    });
+  });
+}
+
+/**
+ * Set language for all translatable elements
+ */
+function setLanguage(lang) {
+  // Update HTML lang attribute
+  document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+  
+  // Find all elements with data-en and data-pt attributes
+  const translatableElements = document.querySelectorAll('[data-en][data-pt]');
+  
+  translatableElements.forEach(el => {
+    const text = lang === 'pt' ? el.dataset.pt : el.dataset.en;
+    
+    // Handle elements that might contain other elements (like links with icons)
+    if (el.childElementCount === 0) {
+      el.textContent = text;
+    } else {
+      // For elements with children (like buttons with icons), find the text node
+      const textNodes = Array.from(el.childNodes).filter(node => node.nodeType === Node.TEXT_NODE);
+      if (textNodes.length > 0) {
+        // Replace text content but keep other child elements
+        const lastTextNode = textNodes[textNodes.length - 1];
+        lastTextNode.textContent = text;
+      } else {
+        // If no text nodes, append the text
+        el.appendChild(document.createTextNode(text));
+      }
+    }
   });
 }
