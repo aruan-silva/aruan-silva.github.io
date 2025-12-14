@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aruan Silva — Software Engineer</title>
+  <title>Aruan Silva — Engenheiro de Software</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,15 +14,18 @@
     <div class="container nav-inner">
       <a href="#" class="logo">AS</a>
       <div class="nav-links">
-        <a href="#about" data-en="About" data-pt="Sobre">About</a>
-        <a href="#data-projects" data-en="Data Projects" data-pt="Projetos de Dados">Data Projects</a>
-        <a href="#other-projects" data-en="Other Projects" data-pt="Outros Projetos">Other Projects</a>
-        <a href="#articles" data-en="Articles" data-pt="Artigos">Articles</a>
-        <a href="#contact" data-en="Contact" data-pt="Contato">Contact</a>
+        <a href="#about" data-en="About" data-pt="Sobre">Sobre</a>
+        <a href="#data-projects" data-en="Data Projects" data-pt="Projetos de Dados">Projetos de Dados</a>
+        <a href="#other-projects" data-en="Other Projects" data-pt="Outros Projetos">Outros Projetos</a>
+        <a href="#articles" data-en="Articles" data-pt="Artigos">Artigos</a>
+        <a href="#contact" data-en="Contact" data-pt="Contato">Contato</a>
       </div>
-      <div class="lang-toggle">
-        <button class="lang-btn active" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="pt">PT</button>
+      <div class="lang-wrapper">
+        <span class="lang-label" data-en="Language" data-pt="Idioma">Idioma</span>
+        <div class="lang-toggle">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn active" data-lang="pt">PT</button>
+        </div>
       </div>
       <button class="mobile-menu-btn" aria-label="Menu">
         <span></span>
@@ -39,22 +42,28 @@
       <h1 class="hero-name">Aruan Silva</h1>
       <div class="hero-divider"></div>
       <p class="hero-intro" data-en="Hi! I'm a software engineer passionate about building products that solve real problems and create meaningful experiences." data-pt="Olá! Sou um engenheiro de software apaixonado por construir produtos que resolvem problemas reais e criam experiências significativas.">
-        Hi! I'm a software engineer passionate about building products 
-        that solve real problems and create meaningful experiences.
+        Olá! Sou um engenheiro de software apaixonado por construir produtos 
+        que resolvem problemas reais e criam experiências significativas.
       </p>
       <div class="hero-links">
-        <a href="https://github.com" target="_blank" rel="noopener" class="hero-link">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+        <a href="#data-projects" class="hero-link hero-link-primary" data-en="Get to know my work" data-pt="Conheça meu trabalho">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
           </svg>
-          Github
+          Conheça meu trabalho
         </a>
         <a href="#contact" class="hero-link" data-en="Contact" data-pt="Contato">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
             <polyline points="22,6 12,13 2,6"/>
           </svg>
-          Contact
+          Contato
+        </a>
+        <a href="https://linkedin.com/in/aruan-silva" target="_blank" rel="noopener" class="hero-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+          LinkedIn
         </a>
       </div>
     </div>
@@ -67,44 +76,65 @@
     <div class="container">
       <div class="about-intro">
         <p class="about-lead" data-en="I am a software engineer focused on building scalable applications and exceptional user experiences." data-pt="Sou um engenheiro de software focado em construir aplicações escaláveis e experiências de usuário excepcionais.">
-          I am a software engineer focused on building scalable applications 
-          and exceptional user experiences.
+          Sou um engenheiro de software focado em construir aplicações escaláveis 
+          e experiências de usuário excepcionais.
         </p>
         <p class="about-text" data-en="I develop full-stack solutions using modern technologies, with a focus on clean architecture and maintainable code. I've worked across fintech, e-commerce, and developer tools." data-pt="Desenvolvo soluções full-stack usando tecnologias modernas, com foco em arquitetura limpa e código sustentável. Já trabalhei em fintech, e-commerce e ferramentas para desenvolvedores.">
-          I develop full-stack solutions using modern technologies, with a focus on 
-          clean architecture and maintainable code. I've worked across fintech, 
-          e-commerce, and developer tools.
+          Desenvolvo soluções full-stack usando tecnologias modernas, com foco em 
+          arquitetura limpa e código sustentável. Já trabalhei em fintech, 
+          e-commerce e ferramentas para desenvolvedores.
         </p>
         <div class="about-links">
-          <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/aruan-silva" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/aruan-silva" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
 
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-year">2017</div>
-          <div class="timeline-content">
-            <h3>Junior Developer</h3>
-            <p>First Company</p>
+      <div class="timeline-wrapper">
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-year">2017</span>
+            <div class="timeline-marker">
+              <div class="timeline-logos">
+                <!-- Add logo: <img src="images/logos/company.png" alt="Company"> -->
+              </div>
+            </div>
+            <div class="timeline-content">
+              <h3>Junior Developer</h3>
+              <p>First Company</p>
+            </div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-year">2019</div>
-          <div class="timeline-content">
-            <h3>Software Engineer</h3>
-            <p>Previous Company</p>
+          
+          <div class="timeline-item">
+            <span class="timeline-year">2019</span>
+            <div class="timeline-marker">
+              <div class="timeline-logos">
+                <!-- Add logo: <img src="images/logos/company.png" alt="Company"> -->
+              </div>
+            </div>
+            <div class="timeline-content">
+              <h3>Software Engineer</h3>
+              <p>Previous Company</p>
+            </div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-year">2022</div>
-          <div class="timeline-content">
-            <h3>Senior Software Engineer</h3>
-            <p>Current Company</p>
+          
+          <div class="timeline-item">
+            <span class="timeline-year">2022</span>
+            <div class="timeline-marker">
+              <div class="timeline-logos">
+                <!-- Add logo: <img src="images/logos/company.png" alt="Company"> -->
+              </div>
+            </div>
+            <div class="timeline-content">
+              <h3>Senior Software Engineer</h3>
+              <p>Current Company</p>
+            </div>
           </div>
-        </div>
-        <div class="timeline-item timeline-now">
-          <div class="timeline-year" data-en="Now" data-pt="Atual">Now</div>
+          
+          <div class="timeline-item timeline-now">
+            <span class="timeline-year" data-en="Now" data-pt="Atual">Atual</span>
+            <div class="timeline-marker"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -112,9 +142,9 @@
 
   <section id="data-projects" class="section portfolio">
     <div class="container">
-      <h2 class="section-title" data-en="Data Projects" data-pt="Projetos de Dados">Data Projects</h2>
+      <h2 class="section-title" data-en="Data Projects" data-pt="Projetos de Dados">Projetos de Dados</h2>
       <div class="portfolio-grid">
-        <a href="#" class="portfolio-card">
+        <a href="projects/project-1.html" class="portfolio-card">
           <div class="portfolio-image">
             <div class="portfolio-placeholder gradient-1">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -124,11 +154,11 @@
           </div>
           <div class="portfolio-info">
             <h3>Project Alpha</h3>
-            <p data-en="A comprehensive platform for managing complex workflows with modern tech stack" data-pt="Uma plataforma abrangente para gerenciar fluxos de trabalho complexos com stack moderna">A comprehensive platform for managing complex workflows with modern tech stack</p>
+            <p data-en="A comprehensive platform for managing complex workflows with modern tech stack" data-pt="Uma plataforma abrangente para gerenciar fluxos de trabalho complexos com stack moderna">Uma plataforma abrangente para gerenciar fluxos de trabalho complexos com stack moderna</p>
           </div>
         </a>
 
-        <a href="#" class="portfolio-card">
+        <a href="projects/project-2.html" class="portfolio-card">
           <div class="portfolio-image">
             <div class="portfolio-placeholder gradient-2">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -139,11 +169,11 @@
           </div>
           <div class="portfolio-info">
             <h3>Data Visualizer</h3>
-            <p data-en="Elegant dashboard for data analysis and visualization with D3.js" data-pt="Dashboard elegante para análise e visualização de dados com D3.js">Elegant dashboard for data analysis and visualization with D3.js</p>
+            <p data-en="Elegant dashboard for data analysis and visualization with D3.js" data-pt="Dashboard elegante para análise e visualização de dados com D3.js">Dashboard elegante para análise e visualização de dados com D3.js</p>
           </div>
         </a>
 
-        <a href="#" class="portfolio-card">
+        <a href="projects/project-3.html" class="portfolio-card">
           <div class="portfolio-image">
             <div class="portfolio-placeholder gradient-3">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -153,11 +183,11 @@
           </div>
           <div class="portfolio-info">
             <h3>API Gateway</h3>
-            <p data-en="High-performance API gateway handling millions of requests daily" data-pt="Gateway de API de alta performance processando milhões de requisições diárias">High-performance API gateway handling millions of requests daily</p>
+            <p data-en="High-performance API gateway handling millions of requests daily" data-pt="Gateway de API de alta performance processando milhões de requisições diárias">Gateway de API de alta performance processando milhões de requisições diárias</p>
           </div>
         </a>
 
-        <a href="#" class="portfolio-card">
+        <a href="projects/project-4.html" class="portfolio-card">
           <div class="portfolio-image">
             <div class="portfolio-placeholder gradient-4">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -168,11 +198,11 @@
           </div>
           <div class="portfolio-info">
             <h3>Mobile App</h3>
-            <p data-en="Cross-platform mobile application with seamless user experience" data-pt="Aplicativo mobile multiplataforma com experiência de usuário impecável">Cross-platform mobile application with seamless user experience</p>
+            <p data-en="Cross-platform mobile application with seamless user experience" data-pt="Aplicativo mobile multiplataforma com experiência de usuário impecável">Aplicativo mobile multiplataforma com experiência de usuário impecável</p>
           </div>
         </a>
 
-        <a href="#" class="portfolio-card">
+        <a href="projects/project-5.html" class="portfolio-card">
           <div class="portfolio-image">
             <div class="portfolio-placeholder gradient-5">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -183,11 +213,11 @@
           </div>
           <div class="portfolio-info">
             <h3>Web Platform</h3>
-            <p data-en="Scalable web platform serving thousands of concurrent users" data-pt="Plataforma web escalável atendendo milhares de usuários simultâneos">Scalable web platform serving thousands of concurrent users</p>
+            <p data-en="Scalable web platform serving thousands of concurrent users" data-pt="Plataforma web escalável atendendo milhares de usuários simultâneos">Plataforma web escalável atendendo milhares de usuários simultâneos</p>
           </div>
         </a>
 
-        <a href="#" class="portfolio-card">
+        <a href="projects/project-6.html" class="portfolio-card">
           <div class="portfolio-image">
             <div class="portfolio-placeholder gradient-6">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -197,7 +227,7 @@
           </div>
           <div class="portfolio-info">
             <h3>Developer Tools</h3>
-            <p data-en="CLI tools and utilities to improve developer productivity" data-pt="Ferramentas CLI e utilitários para melhorar a produtividade do desenvolvedor">CLI tools and utilities to improve developer productivity</p>
+            <p data-en="CLI tools and utilities to improve developer productivity" data-pt="Ferramentas CLI e utilitários para melhorar a produtividade do desenvolvedor">Ferramentas CLI e utilitários para melhorar a produtividade do desenvolvedor</p>
           </div>
         </a>
       </div>
@@ -206,8 +236,8 @@
 
   <section id="other-projects" class="section other-projects">
     <div class="container">
-      <h2 class="section-title" data-en="Other Projects" data-pt="Outros Projetos">Other Projects</h2>
-      <p class="section-subtitle" data-en="External projects and websites I've worked on" data-pt="Projetos externos e sites em que trabalhei">External projects and websites I've worked on</p>
+      <h2 class="section-title" data-en="Other Projects" data-pt="Outros Projetos">Outros Projetos</h2>
+      <p class="section-subtitle" data-en="External projects and websites I've worked on" data-pt="Projetos externos e sites em que trabalhei">Projetos externos e sites em que trabalhei</p>
       <div class="external-links-grid">
         <a href="https://example.com" target="_blank" rel="noopener" class="external-link-card">
           <div class="external-link-icon">
@@ -219,7 +249,7 @@
           </div>
           <div class="external-link-content">
             <h3>Project Name</h3>
-            <p data-en="Brief description of the external project" data-pt="Breve descrição do projeto externo">Brief description of the external project</p>
+            <p data-en="Brief description of the external project" data-pt="Breve descrição do projeto externo">Breve descrição do projeto externo</p>
             <span class="external-link-url">example.com</span>
           </div>
         </a>
@@ -234,7 +264,7 @@
           </div>
           <div class="external-link-content">
             <h3>Another Project</h3>
-            <p data-en="Description of another website or project" data-pt="Descrição de outro site ou projeto">Description of another website or project</p>
+            <p data-en="Description of another website or project" data-pt="Descrição de outro site ou projeto">Descrição de outro site ou projeto</p>
             <span class="external-link-url">example2.com</span>
           </div>
         </a>
@@ -249,7 +279,7 @@
           </div>
           <div class="external-link-content">
             <h3>Third Project</h3>
-            <p data-en="Description of a third external project" data-pt="Descrição de um terceiro projeto externo">Description of a third external project</p>
+            <p data-en="Description of a third external project" data-pt="Descrição de um terceiro projeto externo">Descrição de um terceiro projeto externo</p>
             <span class="external-link-url">example3.com</span>
           </div>
         </a>
@@ -259,21 +289,21 @@
 
   <section id="articles" class="section blog">
     <div class="container">
-      <h2 class="section-title" data-en="Articles" data-pt="Artigos">Articles</h2>
+      <h2 class="section-title" data-en="Articles" data-pt="Artigos">Artigos</h2>
       <div class="blog-list">
         <a href="blog/post-1.html" class="blog-item">
-          <time datetime="2024-12-01" data-en="Dec 2024" data-pt="Dez 2024">Dec 2024</time>
-          <h3 data-en="On Building Elegant Software Systems" data-pt="Sobre Construir Sistemas de Software Elegantes">On Building Elegant Software Systems</h3>
+          <time datetime="2024-12-01" data-en="Dec 2024" data-pt="Dez 2024">Dez 2024</time>
+          <h3 data-en="On Building Elegant Software Systems" data-pt="Sobre Construir Sistemas de Software Elegantes">Sobre Construir Sistemas de Software Elegantes</h3>
           <span class="blog-arrow">→</span>
         </a>
         <a href="blog/post-2.html" class="blog-item">
-          <time datetime="2024-10-15" data-en="Oct 2024" data-pt="Out 2024">Oct 2024</time>
-          <h3 data-en="The Art of Simplicity in Code" data-pt="A Arte da Simplicidade no Código">The Art of Simplicity in Code</h3>
+          <time datetime="2024-10-15" data-en="Oct 2024" data-pt="Out 2024">Out 2024</time>
+          <h3 data-en="The Art of Simplicity in Code" data-pt="A Arte da Simplicidade no Código">A Arte da Simplicidade no Código</h3>
           <span class="blog-arrow">→</span>
         </a>
         <a href="blog/post-3.html" class="blog-item">
-          <time datetime="2024-08-22" data-en="Aug 2024" data-pt="Ago 2024">Aug 2024</time>
-          <h3 data-en="Reflections on Developer Experience" data-pt="Reflexões sobre Experiência do Desenvolvedor">Reflections on Developer Experience</h3>
+          <time datetime="2024-08-22" data-en="Aug 2024" data-pt="Ago 2024">Ago 2024</time>
+          <h3 data-en="Reflections on Developer Experience" data-pt="Reflexões sobre Experiência do Desenvolvedor">Reflexões sobre Experiência do Desenvolvedor</h3>
           <span class="blog-arrow">→</span>
         </a>
       </div>
@@ -282,10 +312,10 @@
 
   <section id="contact" class="section contact">
     <div class="container">
-      <h2 class="section-title" data-en="Contact" data-pt="Contato">Contact</h2>
+      <h2 class="section-title" data-en="Contact" data-pt="Contato">Contato</h2>
       <p class="contact-text" data-en="Feel free to contact me for any inquiry about my work. I'm looking forward to connecting with you!" data-pt="Sinta-se à vontade para entrar em contato para qualquer dúvida sobre meu trabalho. Estou ansioso para me conectar com você!">
-        Feel free to contact me for any inquiry about my work. 
-        I'm looking forward to connecting with you!
+        Sinta-se à vontade para entrar em contato para qualquer dúvida sobre meu trabalho. 
+        Estou ansioso para me conectar com você!
       </p>
       <div class="contact-buttons">
         <a href="mailto:hello@example.com" class="contact-btn">
@@ -293,13 +323,19 @@
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
             <polyline points="22,6 12,13 2,6"/>
           </svg>
-          Mail
+          E-mail
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-btn">
+        <a href="https://linkedin.com/in/aruan-silva" target="_blank" rel="noopener" class="contact-btn">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
             <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
           </svg>
           LinkedIn
+        </a>
+        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" class="contact-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          WhatsApp
         </a>
       </div>
     </div>

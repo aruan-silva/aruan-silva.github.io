@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reflections on Developer Experience — Aruan Silva</title>
+  <title>Reflexões sobre Experiência do Desenvolvedor — Aruan Silva</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,77 +14,87 @@
     <div class="container nav-inner">
       <a href="../index.html" class="logo">AS</a>
       <div class="nav-links">
-        <a href="../index.html#about" data-en="About" data-pt="Sobre">About</a>
-        <a href="../index.html#data-projects" data-en="Data Projects" data-pt="Projetos de Dados">Data Projects</a>
-        <a href="../index.html#other-projects" data-en="Other Projects" data-pt="Outros Projetos">Other Projects</a>
-        <a href="../index.html#articles" data-en="Articles" data-pt="Artigos">Articles</a>
-        <a href="../index.html#contact" data-en="Contact" data-pt="Contato">Contact</a>
+        <a href="../index.html#about" data-en="About" data-pt="Sobre">Sobre</a>
+        <a href="../index.html#data-projects" data-en="Data Projects" data-pt="Projetos de Dados">Projetos de Dados</a>
+        <a href="../index.html#other-projects" data-en="Other Projects" data-pt="Outros Projetos">Outros Projetos</a>
+        <a href="../index.html#articles" data-en="Articles" data-pt="Artigos">Artigos</a>
+        <a href="../index.html#contact" data-en="Contact" data-pt="Contato">Contato</a>
       </div>
-      <div class="lang-toggle">
-        <button class="lang-btn active" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="pt">PT</button>
+      <div class="lang-wrapper">
+        <span class="lang-label" data-en="Language" data-pt="Idioma">Idioma</span>
+        <div class="lang-toggle">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn active" data-lang="pt">PT</button>
+        </div>
       </div>
     </div>
   </nav>
 
-  <header class="blog-header">
-    <a href="../index.html#articles" class="back-link" data-en="← Back to all articles" data-pt="← Voltar para todos os artigos">← Back to all articles</a>
-    <time datetime="2024-08-22" data-en="August 22, 2024" data-pt="22 de Agosto de 2024">August 22, 2024</time>
-    <h1 data-en="Reflections on Developer Experience" data-pt="Reflexões sobre Experiência do Desenvolvedor">Reflections on Developer Experience</h1>
-  </header>
+  <div class="blog-layout">
+    <main class="blog-main">
+      <header class="blog-header-inline">
+        <a href="../index.html#articles" class="back-link" data-en="← Back to all articles" data-pt="← Voltar para todos os artigos">← Voltar para todos os artigos</a>
+        <time datetime="2024-08-22" data-en="August 22, 2024" data-pt="22 de Agosto de 2024">22 de Agosto de 2024</time>
+        <h1 data-en="Reflections on Developer Experience" data-pt="Reflexões sobre Experiência do Desenvolvedor">Reflexões sobre Experiência do Desenvolvedor</h1>
+      </header>
 
-  <article class="blog-content">
-    <p data-en="We spend considerable effort thinking about user experience—the experience of the people who use our software. But there is another audience whose experience matters deeply: the developers who will build upon, maintain, and extend our work." data-pt="Passamos um esforço considerável pensando sobre experiência do usuário — a experiência das pessoas que usam nosso software. Mas há outro público cuja experiência importa profundamente: os desenvolvedores que irão construir sobre, manter e estender nosso trabalho.">
-      We spend considerable effort thinking about user experience—the experience of the people who use our software. But there is another audience whose experience matters deeply: the developers who will build upon, maintain, and extend our work.
-    </p>
+      <article class="blog-content-inline">
+        <p data-en="We spend considerable effort thinking about user experience—the experience of the people who use our software. But there is another audience whose experience matters deeply: the developers who will build upon, maintain, and extend our work." data-pt="Passamos um esforço considerável pensando sobre experiência do usuário — a experiência das pessoas que usam nosso software. Mas há outro público cuja experiência importa profundamente: os desenvolvedores que irão construir sobre, manter e estender nosso trabalho.">
+          Passamos um esforço considerável pensando sobre experiência do usuário — a experiência das pessoas que usam nosso software. Mas há outro público cuja experiência importa profundamente: os desenvolvedores que irão construir sobre, manter e estender nosso trabalho.
+        </p>
 
-    <p data-en="Developer experience, often abbreviated as DX, encompasses everything that affects how it feels to work with a piece of software, an API, or a codebase. Good DX means that developers can be productive quickly, that common tasks are easy, and that the tools and documentation support rather than hinder their work." data-pt="Experiência do desenvolvedor, frequentemente abreviada como DX, engloba tudo que afeta como é trabalhar com um software, uma API ou uma base de código. Boa DX significa que desenvolvedores podem ser produtivos rapidamente, que tarefas comuns são fáceis, e que as ferramentas e documentação apoiam em vez de atrapalhar seu trabalho.">
-      Developer experience, often abbreviated as DX, encompasses everything that affects how it feels to work with a piece of software, an API, or a codebase. Good DX means that developers can be productive quickly, that common tasks are easy, and that the tools and documentation support rather than hinder their work.
-    </p>
+        <h2 data-en="Why DX Matters" data-pt="Por Que DX Importa">Por Que DX Importa</h2>
 
-    <h2 data-en="Why DX Matters" data-pt="Por Que DX Importa">Why DX Matters</h2>
+        <p data-en="There is a pragmatic argument for investing in developer experience: it directly affects productivity." data-pt="Há um argumento pragmático para investir em experiência do desenvolvedor: afeta diretamente a produtividade.">
+          Há um argumento pragmático para investir em experiência do desenvolvedor: afeta diretamente a produtividade.
+        </p>
 
-    <p data-en="There is a pragmatic argument for investing in developer experience: it directly affects productivity. When developers can understand a system quickly, when APIs behave as expected, when documentation is clear and complete, work gets done faster and with fewer errors." data-pt="Há um argumento pragmático para investir em experiência do desenvolvedor: afeta diretamente a produtividade. Quando desenvolvedores podem entender um sistema rapidamente, quando APIs se comportam como esperado, quando a documentação é clara e completa, o trabalho é feito mais rápido e com menos erros.">
-      There is a pragmatic argument for investing in developer experience: it directly affects productivity. When developers can understand a system quickly, when APIs behave as expected, when documentation is clear and complete, work gets done faster and with fewer errors.
-    </p>
+        <p data-en="But there is also a deeper reason. Software development is a creative endeavor, and creativity flourishes in environments that feel supportive rather than hostile." data-pt="Mas há também uma razão mais profunda. Desenvolvimento de software é um esforço criativo, e a criatividade floresce em ambientes que parecem apoiadores em vez de hostis.">
+          Mas há também uma razão mais profunda. Desenvolvimento de software é um esforço criativo, e a criatividade floresce em ambientes que parecem apoiadores em vez de hostis.
+        </p>
 
-    <p data-en="But there is also a deeper reason. Software development is a creative endeavor, and creativity flourishes in environments that feel supportive rather than hostile. When we improve developer experience, we create space for innovation and craftsmanship." data-pt="Mas há também uma razão mais profunda. Desenvolvimento de software é um esforço criativo, e a criatividade floresce em ambientes que parecem apoiadores em vez de hostis. Quando melhoramos a experiência do desenvolvedor, criamos espaço para inovação e artesanato.">
-      But there is also a deeper reason. Software development is a creative endeavor, and creativity flourishes in environments that feel supportive rather than hostile. When we improve developer experience, we create space for innovation and craftsmanship.
-    </p>
+        <blockquote>
+          <span data-en="Programs must be written for people to read, and only incidentally for machines to execute." data-pt="Programas devem ser escritos para pessoas lerem, e apenas incidentalmente para máquinas executarem.">"Programas devem ser escritos para pessoas lerem, e apenas incidentalmente para máquinas executarem."</span>
+          <cite>— Harold Abelson</cite>
+        </blockquote>
 
-    <blockquote>
-      <span data-en="Programs must be written for people to read, and only incidentally for machines to execute." data-pt="Programas devem ser escritos para pessoas lerem, e apenas incidentalmente para máquinas executarem.">"Programs must be written for people to read, and only incidentally for machines to execute."</span>
-      <cite>— Harold Abelson</cite>
-    </blockquote>
+        <h2 data-en="The Elements of Good DX" data-pt="Os Elementos de uma Boa DX">Os Elementos de uma Boa DX</h2>
 
-    <h2 data-en="The Elements of Good DX" data-pt="Os Elementos de uma Boa DX">The Elements of Good DX</h2>
+        <p data-en="What makes for good developer experience? First and foremost, it is about reducing friction." data-pt="O que faz uma boa experiência do desenvolvedor? Primeiro e mais importante, é sobre reduzir fricção.">
+          O que faz uma boa experiência do desenvolvedor? Primeiro e mais importante, é sobre reduzir fricção.
+        </p>
 
-    <p data-en="What makes for good developer experience? First and foremost, it is about reducing friction. Every unnecessary step, every confusing error message, every undocumented behavior is friction that slows developers down and saps their energy." data-pt="O que faz uma boa experiência do desenvolvedor? Primeiro e mais importante, é sobre reduzir fricção. Cada passo desnecessário, cada mensagem de erro confusa, cada comportamento não documentado é fricção que desacelera desenvolvedores e drena sua energia.">
-      What makes for good developer experience? First and foremost, it is about reducing friction. Every unnecessary step, every confusing error message, every undocumented behavior is friction that slows developers down and saps their energy.
-    </p>
+        <p data-en="Documentation is a crucial part of DX. Not just reference documentation, but guides and examples that show how to accomplish common tasks." data-pt="Documentação é uma parte crucial da DX. Não apenas documentação de referência, mas guias e exemplos que mostram como realizar tarefas comuns.">
+          Documentação é uma parte crucial da DX. Não apenas documentação de referência, mas guias e exemplos que mostram como realizar tarefas comuns.
+        </p>
 
-    <p data-en="Good DX also means respecting conventions. When an API behaves the way developers expect it to, based on their experience with similar tools, the learning curve is gentler and the likelihood of mistakes is lower." data-pt="Boa DX também significa respeitar convenções. Quando uma API se comporta da forma que desenvolvedores esperam, baseado em sua experiência com ferramentas similares, a curva de aprendizado é mais suave e a probabilidade de erros é menor.">
-      Good DX also means respecting conventions. When an API behaves the way developers expect it to, based on their experience with similar tools, the learning curve is gentler and the likelihood of mistakes is lower.
-    </p>
+        <h2 data-en="DX as Design" data-pt="DX como Design">DX como Design</h2>
 
-    <p data-en="Documentation is a crucial part of DX. Not just reference documentation, but guides and examples that show how to accomplish common tasks. The best documentation anticipates questions and answers them before they're asked." data-pt="Documentação é uma parte crucial da DX. Não apenas documentação de referência, mas guias e exemplos que mostram como realizar tarefas comuns. A melhor documentação antecipa perguntas e as responde antes de serem feitas.">
-      Documentation is a crucial part of DX. Not just reference documentation, but guides and examples that show how to accomplish common tasks. The best documentation anticipates questions and answers them before they're asked.
-    </p>
+        <p data-en="Thinking about developer experience is really thinking about design—not visual design, but the design of interfaces, workflows, and mental models." data-pt="Pensar sobre experiência do desenvolvedor é realmente pensar sobre design — não design visual, mas o design de interfaces, fluxos de trabalho e modelos mentais.">
+          Pensar sobre experiência do desenvolvedor é realmente pensar sobre design — não design visual, mas o design de interfaces, fluxos de trabalho e modelos mentais.
+        </p>
 
-    <h2 data-en="DX as Design" data-pt="DX como Design">DX as Design</h2>
+        <p data-en="Ultimately, investing in developer experience is an investment in the future." data-pt="Em última análise, investir em experiência do desenvolvedor é um investimento no futuro.">
+          Em última análise, investir em experiência do desenvolvedor é um investimento no futuro.
+        </p>
+      </article>
+    </main>
 
-    <p data-en="Thinking about developer experience is really thinking about design—not visual design, but the design of interfaces, workflows, and mental models. Like all design, it requires empathy: the ability to see your creation through the eyes of someone encountering it for the first time." data-pt="Pensar sobre experiência do desenvolvedor é realmente pensar sobre design — não design visual, mas o design de interfaces, fluxos de trabalho e modelos mentais. Como todo design, requer empatia: a habilidade de ver sua criação através dos olhos de alguém encontrando-a pela primeira vez.">
-      Thinking about developer experience is really thinking about design—not visual design, but the design of interfaces, workflows, and mental models. Like all design, it requires empathy: the ability to see your creation through the eyes of someone encountering it for the first time.
-    </p>
-
-    <p data-en="It also requires iteration. Our first attempt at an API or a codebase structure is rarely optimal. We must be willing to gather feedback, observe how developers actually use our tools, and refine accordingly." data-pt="Também requer iteração. Nossa primeira tentativa em uma API ou estrutura de código raramente é ótima. Devemos estar dispostos a coletar feedback, observar como desenvolvedores realmente usam nossas ferramentas, e refinar de acordo.">
-      It also requires iteration. Our first attempt at an API or a codebase structure is rarely optimal. We must be willing to gather feedback, observe how developers actually use our tools, and refine accordingly.
-    </p>
-
-    <p data-en="Ultimately, investing in developer experience is an investment in the future. The code we write today will be read, modified, and extended by developers we may never meet. By making their experience better, we honor the collaborative nature of our craft." data-pt="Em última análise, investir em experiência do desenvolvedor é um investimento no futuro. O código que escrevemos hoje será lido, modificado e estendido por desenvolvedores que talvez nunca conheceremos. Ao melhorar sua experiência, honramos a natureza colaborativa do nosso ofício.">
-      Ultimately, investing in developer experience is an investment in the future. The code we write today will be read, modified, and extended by developers we may never meet. By making their experience better, we honor the collaborative nature of our craft.
-    </p>
-  </article>
+    <aside class="blog-sidebar">
+      <h3 class="blog-sidebar-title" data-en="Other Articles" data-pt="Outros Artigos">Outros Artigos</h3>
+      <ul class="blog-sidebar-list">
+        <li>
+          <a href="post-1.html" data-en="On Building Elegant Software Systems" data-pt="Sobre Construir Sistemas de Software Elegantes">Sobre Construir Sistemas de Software Elegantes</a>
+        </li>
+        <li>
+          <a href="post-2.html" data-en="The Art of Simplicity in Code" data-pt="A Arte da Simplicidade no Código">A Arte da Simplicidade no Código</a>
+        </li>
+        <li>
+          <a href="post-3.html" class="active" data-en="Reflections on Developer Experience" data-pt="Reflexões sobre Experiência do Desenvolvedor">Reflexões sobre Experiência do Desenvolvedor</a>
+        </li>
+      </ul>
+    </aside>
+  </div>
 
   <footer class="footer">
     <div class="container footer-inner">

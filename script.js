@@ -1,5 +1,6 @@
 /**
  * Clean, modern interactions with language toggle
+ * Default language: Brazilian Portuguese (pt)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -112,10 +113,13 @@ function initMobileMenu() {
 
 /**
  * Language Toggle (PT/EN)
+ * Default: Brazilian Portuguese (pt)
  */
 function initLanguageToggle() {
   const langButtons = document.querySelectorAll('.lang-btn');
-  const savedLang = localStorage.getItem('language') || 'en';
+  
+  // Get saved language or default to Portuguese
+  const savedLang = localStorage.getItem('language') || 'pt';
   
   // Apply saved language on load
   setLanguage(savedLang);
@@ -148,20 +152,32 @@ function setLanguage(lang) {
   translatableElements.forEach(el => {
     const text = lang === 'pt' ? el.dataset.pt : el.dataset.en;
     
-    // Handle elements that might contain other elements (like links with icons)
-    if (el.childElementCount === 0) {
-      el.textContent = text;
-    } else {
-      // For elements with children (like buttons with icons), find the text node
-      const textNodes = Array.from(el.childNodes).filter(node => node.nodeType === Node.TEXT_NODE);
-      if (textNodes.length > 0) {
-        // Replace text content but keep other child elements
-        const lastTextNode = textNodes[textNodes.length - 1];
-        lastTextNode.textContent = text;
-      } else {
-        // If no text nodes, append the text
-        el.appendChild(document.createTextNode(text));
+    // Check if element has child elements (like icons)
+    const hasChildElements = el.querySelector('svg, img');
+    
+    if (hasChildElements) {
+      // For elements with icons, find and update only text nodes
+      const childNodes = Array.from(el.childNodes);
+      let hasTextNode = false;
+      
+      childNodes.forEach(node => {
+        if (node.nodeType === Node.TEXT_NODE && node.textContent.trim()) {
+          node.textContent = '\n          ' + text + '\n        ';
+          hasTextNode = true;
+        }
+      });
+      
+      // If no text node found, append the text
+      if (!hasTextNode) {
+        // Find existing text and replace
+        const textContent = el.textContent.trim();
+        if (textContent) {
+          el.innerHTML = el.innerHTML.replace(textContent, text);
+        }
       }
+    } else {
+      // Simple text element
+      el.textContent = text;
     }
   });
 }

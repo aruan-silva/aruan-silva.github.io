@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Art of Simplicity in Code — Aruan Silva</title>
+  <title>A Arte da Simplicidade no Código — Aruan Silva</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,77 +14,83 @@
     <div class="container nav-inner">
       <a href="../index.html" class="logo">AS</a>
       <div class="nav-links">
-        <a href="../index.html#about" data-en="About" data-pt="Sobre">About</a>
-        <a href="../index.html#data-projects" data-en="Data Projects" data-pt="Projetos de Dados">Data Projects</a>
-        <a href="../index.html#other-projects" data-en="Other Projects" data-pt="Outros Projetos">Other Projects</a>
-        <a href="../index.html#articles" data-en="Articles" data-pt="Artigos">Articles</a>
-        <a href="../index.html#contact" data-en="Contact" data-pt="Contato">Contact</a>
+        <a href="../index.html#about" data-en="About" data-pt="Sobre">Sobre</a>
+        <a href="../index.html#data-projects" data-en="Data Projects" data-pt="Projetos de Dados">Projetos de Dados</a>
+        <a href="../index.html#other-projects" data-en="Other Projects" data-pt="Outros Projetos">Outros Projetos</a>
+        <a href="../index.html#articles" data-en="Articles" data-pt="Artigos">Artigos</a>
+        <a href="../index.html#contact" data-en="Contact" data-pt="Contato">Contato</a>
       </div>
-      <div class="lang-toggle">
-        <button class="lang-btn active" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="pt">PT</button>
+      <div class="lang-wrapper">
+        <span class="lang-label" data-en="Language" data-pt="Idioma">Idioma</span>
+        <div class="lang-toggle">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn active" data-lang="pt">PT</button>
+        </div>
       </div>
     </div>
   </nav>
 
-  <header class="blog-header">
-    <a href="../index.html#articles" class="back-link" data-en="← Back to all articles" data-pt="← Voltar para todos os artigos">← Back to all articles</a>
-    <time datetime="2024-10-15" data-en="October 15, 2024" data-pt="15 de Outubro de 2024">October 15, 2024</time>
-    <h1 data-en="The Art of Simplicity in Code" data-pt="A Arte da Simplicidade no Código">The Art of Simplicity in Code</h1>
-  </header>
+  <div class="blog-layout">
+    <main class="blog-main">
+      <header class="blog-header-inline">
+        <a href="../index.html#articles" class="back-link" data-en="← Back to all articles" data-pt="← Voltar para todos os artigos">← Voltar para todos os artigos</a>
+        <time datetime="2024-10-15" data-en="October 15, 2024" data-pt="15 de Outubro de 2024">15 de Outubro de 2024</time>
+        <h1 data-en="The Art of Simplicity in Code" data-pt="A Arte da Simplicidade no Código">A Arte da Simplicidade no Código</h1>
+      </header>
 
-  <article class="blog-content">
-    <p data-en="Simplicity is perhaps the most misunderstood virtue in software development. We speak of it often, admire it in principle, yet consistently fail to achieve it in practice. Why is this? And what would it mean to truly embrace simplicity in our work?" data-pt="Simplicidade é talvez a virtude mais mal compreendida no desenvolvimento de software. Falamos dela frequentemente, a admiramos em princípio, mas consistentemente falhamos em alcançá-la na prática. Por que isso? E o que significaria realmente abraçar a simplicidade em nosso trabalho?">
-      Simplicity is perhaps the most misunderstood virtue in software development. We speak of it often, admire it in principle, yet consistently fail to achieve it in practice. Why is this? And what would it mean to truly embrace simplicity in our work?
-    </p>
+      <article class="blog-content-inline">
+        <p data-en="Simplicity is perhaps the most misunderstood virtue in software development. We speak of it often, admire it in principle, yet consistently fail to achieve it in practice." data-pt="Simplicidade é talvez a virtude mais mal compreendida no desenvolvimento de software. Falamos dela frequentemente, a admiramos em princípio, mas consistentemente falhamos em alcançá-la na prática.">
+          Simplicidade é talvez a virtude mais mal compreendida no desenvolvimento de software. Falamos dela frequentemente, a admiramos em princípio, mas consistentemente falhamos em alcançá-la na prática.
+        </p>
 
-    <p data-en="The first obstacle is that simplicity is hard. It requires more thought, more iteration, and more courage than complexity. It is easy to add another layer of abstraction, another configuration option, another feature. It is difficult to step back and ask: what can I remove?" data-pt="O primeiro obstáculo é que simplicidade é difícil. Requer mais pensamento, mais iteração e mais coragem do que complexidade. É fácil adicionar outra camada de abstração, outra opção de configuração, outra funcionalidade. É difícil dar um passo atrás e perguntar: o que posso remover?">
-      The first obstacle is that simplicity is hard. It requires more thought, more iteration, and more courage than complexity. It is easy to add another layer of abstraction, another configuration option, another feature. It is difficult to step back and ask: what can I remove?
-    </p>
+        <p data-en="The first obstacle is that simplicity is hard. It requires more thought, more iteration, and more courage than complexity." data-pt="O primeiro obstáculo é que simplicidade é difícil. Requer mais pensamento, mais iteração e mais coragem do que complexidade.">
+          O primeiro obstáculo é que simplicidade é difícil. Requer mais pensamento, mais iteração e mais coragem do que complexidade.
+        </p>
 
-    <h2 data-en="Complexity as Debt" data-pt="Complexidade como Dívida">Complexity as Debt</h2>
+        <h2 data-en="Complexity as Debt" data-pt="Complexidade como Dívida">Complexidade como Dívida</h2>
 
-    <p data-en="Every piece of complexity in a system carries a cost. This cost is paid not once, but repeatedly—every time someone needs to understand the system, modify it, or debug it. Complexity compounds over time, making systems harder to work with and more prone to failure." data-pt="Cada peça de complexidade em um sistema carrega um custo. Este custo é pago não uma vez, mas repetidamente — toda vez que alguém precisa entender o sistema, modificá-lo ou debugá-lo. A complexidade se acumula ao longo do tempo, tornando os sistemas mais difíceis de trabalhar e mais propensos a falhas.">
-      Every piece of complexity in a system carries a cost. This cost is paid not once, but repeatedly—every time someone needs to understand the system, modify it, or debug it. Complexity compounds over time, making systems harder to work with and more prone to failure.
-    </p>
+        <p data-en="Every piece of complexity in a system carries a cost. This cost is paid not once, but repeatedly—every time someone needs to understand the system, modify it, or debug it." data-pt="Cada peça de complexidade em um sistema carrega um custo. Este custo é pago não uma vez, mas repetidamente — toda vez que alguém precisa entender o sistema, modificá-lo ou debugá-lo.">
+          Cada peça de complexidade em um sistema carrega um custo. Este custo é pago não uma vez, mas repetidamente — toda vez que alguém precisa entender o sistema, modificá-lo ou debugá-lo.
+        </p>
 
-    <p data-en="We might think of complexity as a form of debt. Like financial debt, it can be useful when used strategically. But also like financial debt, it accumulates interest and can quickly become overwhelming if not managed carefully." data-pt="Podemos pensar na complexidade como uma forma de dívida. Como dívida financeira, pode ser útil quando usada estrategicamente. Mas também como dívida financeira, acumula juros e pode rapidamente se tornar esmagadora se não for gerenciada cuidadosamente.">
-      We might think of complexity as a form of debt. Like financial debt, it can be useful when used strategically. But also like financial debt, it accumulates interest and can quickly become overwhelming if not managed carefully.
-    </p>
+        <blockquote>
+          <span data-en="Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple." data-pt="Simples pode ser mais difícil do que complexo: Você tem que trabalhar duro para limpar seu pensamento e torná-lo simples.">"Simples pode ser mais difícil do que complexo: Você tem que trabalhar duro para limpar seu pensamento e torná-lo simples."</span>
+          <cite>— Steve Jobs</cite>
+        </blockquote>
 
-    <blockquote>
-      <span data-en="Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple." data-pt="Simples pode ser mais difícil do que complexo: Você tem que trabalhar duro para limpar seu pensamento e torná-lo simples.">"Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple."</span>
-      <cite>— Steve Jobs</cite>
-    </blockquote>
+        <h2 data-en="The Path to Simplicity" data-pt="O Caminho para a Simplicidade">O Caminho para a Simplicidade</h2>
 
-    <h2 data-en="The Path to Simplicity" data-pt="O Caminho para a Simplicidade">The Path to Simplicity</h2>
+        <p data-en="How do we cultivate simplicity? I believe it begins with understanding. Before we can simplify a problem, we must understand it deeply." data-pt="Como cultivamos a simplicidade? Acredito que começa com entendimento. Antes de podermos simplificar um problema, devemos entendê-lo profundamente.">
+          Como cultivamos a simplicidade? Acredito que começa com entendimento. Antes de podermos simplificar um problema, devemos entendê-lo profundamente.
+        </p>
 
-    <p data-en="How do we cultivate simplicity? I believe it begins with understanding. Before we can simplify a problem, we must understand it deeply. This means resisting the urge to immediately start coding, and instead spending time with the problem itself." data-pt="Como cultivamos a simplicidade? Acredito que começa com entendimento. Antes de podermos simplificar um problema, devemos entendê-lo profundamente. Isso significa resistir ao impulso de começar a programar imediatamente, e em vez disso passar tempo com o problema em si.">
-      How do we cultivate simplicity? I believe it begins with understanding. Before we can simplify a problem, we must understand it deeply. This means resisting the urge to immediately start coding, and instead spending time with the problem itself.
-    </p>
+        <h2 data-en="Simplicity in Practice" data-pt="Simplicidade na Prática">Simplicidade na Prática</h2>
 
-    <p data-en="It also means questioning our assumptions. Often, the complexity in our systems comes from requirements that were never truly necessary—features added 'just in case,' abstractions built for flexibility we'll never need." data-pt="Também significa questionar nossas suposições. Frequentemente, a complexidade em nossos sistemas vem de requisitos que nunca foram realmente necessários — funcionalidades adicionadas 'por precaução', abstrações construídas para flexibilidade que nunca precisaremos.">
-      It also means questioning our assumptions. Often, the complexity in our systems comes from requirements that were never truly necessary—features added "just in case," abstractions built for flexibility we'll never need.
-    </p>
+        <p data-en="What does simplicity look like in practice? It looks like functions that do one thing well. It looks like clear names that reveal intent." data-pt="Como a simplicidade se parece na prática? Parece funções que fazem uma coisa bem. Parece nomes claros que revelam intenção.">
+          Como a simplicidade se parece na prática? Parece funções que fazem uma coisa bem. Parece nomes claros que revelam intenção.
+        </p>
 
-    <p data-en="Finally, simplicity requires iteration. Our first solutions are rarely our simplest. We must be willing to revisit and refine, to throw away code that doesn't serve the essential purpose." data-pt="Finalmente, simplicidade requer iteração. Nossas primeiras soluções raramente são as mais simples. Devemos estar dispostos a revisitar e refinar, a jogar fora código que não serve ao propósito essencial.">
-      Finally, simplicity requires iteration. Our first solutions are rarely our simplest. We must be willing to revisit and refine, to throw away code that doesn't serve the essential purpose.
-    </p>
+        <p data-en="Simplicity is not the absence of features—it is the presence of coherence. A simple system is one where everything belongs." data-pt="Simplicidade não é a ausência de funcionalidades — é a presença de coerência. Um sistema simples é aquele onde tudo pertence.">
+          Simplicidade não é a ausência de funcionalidades — é a presença de coerência. Um sistema simples é aquele onde tudo pertence.
+        </p>
+      </article>
+    </main>
 
-    <h2 data-en="Simplicity in Practice" data-pt="Simplicidade na Prática">Simplicity in Practice</h2>
-
-    <p data-en="What does simplicity look like in practice? It looks like functions that do one thing well. It looks like clear names that reveal intent. It looks like code that reads like prose, where the next line follows naturally from the last." data-pt="Como a simplicidade se parece na prática? Parece funções que fazem uma coisa bem. Parece nomes claros que revelam intenção. Parece código que se lê como prosa, onde a próxima linha segue naturalmente da anterior.">
-      What does simplicity look like in practice? It looks like functions that do one thing well. It looks like clear names that reveal intent. It looks like code that reads like prose, where the next line follows naturally from the last.
-    </p>
-
-    <p data-en="It also looks like saying no. No to the feature that doesn't fit. No to the abstraction that isn't needed yet. No to the optimization that makes the code harder to understand without meaningful benefit." data-pt="Também parece dizer não. Não para a funcionalidade que não se encaixa. Não para a abstração que ainda não é necessária. Não para a otimização que torna o código mais difícil de entender sem benefício significativo.">
-      It also looks like saying no. No to the feature that doesn't fit. No to the abstraction that isn't needed yet. No to the optimization that makes the code harder to understand without meaningful benefit.
-    </p>
-
-    <p data-en="Simplicity is not the absence of features—it is the presence of coherence. A simple system is one where everything belongs, where nothing feels forced or out of place." data-pt="Simplicidade não é a ausência de funcionalidades — é a presença de coerência. Um sistema simples é aquele onde tudo pertence, onde nada parece forçado ou fora de lugar.">
-      Simplicity is not the absence of features—it is the presence of coherence. A simple system is one where everything belongs, where nothing feels forced or out of place.
-    </p>
-  </article>
+    <aside class="blog-sidebar">
+      <h3 class="blog-sidebar-title" data-en="Other Articles" data-pt="Outros Artigos">Outros Artigos</h3>
+      <ul class="blog-sidebar-list">
+        <li>
+          <a href="post-1.html" data-en="On Building Elegant Software Systems" data-pt="Sobre Construir Sistemas de Software Elegantes">Sobre Construir Sistemas de Software Elegantes</a>
+        </li>
+        <li>
+          <a href="post-2.html" class="active" data-en="The Art of Simplicity in Code" data-pt="A Arte da Simplicidade no Código">A Arte da Simplicidade no Código</a>
+        </li>
+        <li>
+          <a href="post-3.html" data-en="Reflections on Developer Experience" data-pt="Reflexões sobre Experiência do Desenvolvedor">Reflexões sobre Experiência do Desenvolvedor</a>
+        </li>
+      </ul>
+    </aside>
+  </div>
 
   <footer class="footer">
     <div class="container footer-inner">
