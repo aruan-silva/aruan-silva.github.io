@@ -187,6 +187,22 @@ Na seção `.clients-row` do `index.html`:
 
 ---
 
+## 📄 Currículo / Resume (PDF)
+
+O site permite download do currículo em inglês e português. Os arquivos ficam na pasta `files/`:
+
+- `files/resume-en.pdf` - Currículo em inglês
+- `files/resume-pt.pdf` - Currículo em português
+
+Para atualizar, simplesmente substitua os arquivos PDF mantendo os mesmos nomes.
+
+**Locais onde aparece:**
+- Menu de navegação (dropdown)
+- Seção hero da página inicial
+- Seção de contato
+
+---
+
 ## 📅 Timeline
 
 Edite a seção `.timeline` no `index.html`:
