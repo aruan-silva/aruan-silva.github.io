@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 40">
-  <!-- Amazon smile/arrow -->
-  <path fill="#FF9900" d="M5,30 Q50,45 95,25" stroke="#FF9900" stroke-width="6" stroke-linecap="round" fill="none"/>
-  <path fill="#FF9900" d="M85,18 L95,25 L88,32" stroke="#FF9900" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+  <!-- Amazon smile/arrow - compact square format -->
+  <path d="M8,32 Q25,42 42,28" stroke="#FF9900" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M36,24 L42,28 L38,34" stroke="#FF9900" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
 </svg>
