@@ -130,12 +130,12 @@ if (mobileMenuBtn && navLinksContainer) {
 }
 
 // ===================================
-// Articles Category Filter
+// Category Filter (Articles, Projects, Courses)
 // ===================================
 const filterTags = document.querySelectorAll('.filter-tag');
-const articleCards = document.querySelectorAll('.article-card');
+const filterableCards = document.querySelectorAll('.article-card, .content-card');
 
-if (filterTags.length > 0) {
+if (filterTags.length > 0 && filterableCards.length > 0) {
   filterTags.forEach(tag => {
     tag.addEventListener('click', () => {
       // Update active state
@@ -144,8 +144,8 @@ if (filterTags.length > 0) {
       
       const filter = tag.dataset.filter;
       
-      // Filter articles
-      articleCards.forEach(card => {
+      // Filter cards
+      filterableCards.forEach(card => {
         if (filter === 'all' || card.dataset.category === filter) {
           card.style.display = 'flex';
         } else {
