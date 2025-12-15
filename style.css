@@ -787,6 +787,14 @@ a {
 /* ===================================
    Timeline
    =================================== */
+.timeline-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text);
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+
 .timeline-wrapper {
   overflow-x: auto;
   margin: 0 calc(var(--container-padding) * -1);
@@ -1007,13 +1015,19 @@ a {
   padding: var(--space-xl) 0;
 }
 
+.clients-wrapper {
+  overflow-x: auto;
+  margin: 0 calc(var(--container-padding) * -1);
+  padding: var(--space-md) var(--container-padding);
+  margin-top: var(--space-lg);
+}
+
 .clients-row {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   gap: var(--space-xl);
-  margin-top: var(--space-lg);
+  min-width: max-content;
+  padding: var(--space-sm) 0;
 }
 
 .client-logo {
@@ -2267,10 +2281,6 @@ a {
     width: 100%;
     max-width: 200px;
     justify-content: center;
-  }
-  
-  .clients-row {
-    gap: var(--space-lg);
   }
   
   .client-logo {
