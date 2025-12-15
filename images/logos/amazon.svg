@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 40">
+  <!-- Amazon smile/arrow -->
+  <path fill="#FF9900" d="M5,30 Q50,45 95,25" stroke="#FF9900" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path fill="#FF9900" d="M85,18 L95,25 L88,32" stroke="#FF9900" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

@@ -568,6 +568,12 @@ a {
   background: var(--color-text);
 }
 
+.timeline-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
 .timeline-logos img {
   width: 24px;
   height: 24px;
