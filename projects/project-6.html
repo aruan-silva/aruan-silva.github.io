@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Developer Tools — Aruan Silva</title>
+  <title>Migração para Data Lakehouse — Aruan Silva</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -34,19 +34,47 @@
     <main class="page-main">
       <header class="page-header">
         <a href="../index.html#data-projects" class="back-link" data-en="← Back to all projects" data-pt="← Voltar para todos os projetos">← Voltar para todos os projetos</a>
-        <h1>Developer Tools</h1>
-        <p class="page-subtitle" data-en="CLI tools and utilities to improve developer productivity" data-pt="Ferramentas CLI e utilitários para melhorar a produtividade do desenvolvedor">Ferramentas CLI e utilitários para melhorar a produtividade do desenvolvedor</p>
+        <h1 data-en="Data Lakehouse Migration" data-pt="Migração para Data Lakehouse">Migração para Data Lakehouse</h1>
+        <p class="page-subtitle" data-en="Migration from Amazon Redshift to Databricks Delta Lake architecture" data-pt="Migração do Amazon Redshift para arquitetura Databricks Delta Lake">Migração do Amazon Redshift para arquitetura Databricks Delta Lake</p>
         <div class="project-tags">
-          <span>Go</span>
-          <span>CLI</span>
-          <span>Open Source</span>
+          <span>Databricks</span>
+          <span>Delta Lake</span>
+          <span>AWS</span>
+          <span>Data Engineering</span>
         </div>
       </header>
 
       <article class="page-content">
-        <h2 data-en="Overview" data-pt="Visão Geral">Visão Geral</h2>
-        <p data-en="A collection of CLI tools." data-pt="Uma coleção de ferramentas CLI.">
-          Uma coleção de ferramentas CLI para automatizar tarefas comuns de desenvolvimento.
+        <h2 data-en="Context" data-pt="Contexto">Contexto</h2>
+        <p data-en="At Red Ventures Brasil, the data infrastructure was based on Amazon Redshift (Data Warehouse). To improve scalability, performance, and cost-efficiency, we decided to migrate to a Data Lakehouse architecture." data-pt="Na Red Ventures Brasil, a infraestrutura de dados era baseada em Amazon Redshift (Data Warehouse). Para melhorar escalabilidade, performance e custo-benefício, decidimos migrar para uma arquitetura de Data Lakehouse.">
+          Na Red Ventures Brasil, a infraestrutura de dados era baseada em Amazon Redshift (Data Warehouse). Para melhorar escalabilidade, performance e custo-benefício, decidimos migrar para uma arquitetura de Data Lakehouse.
+        </p>
+
+        <h2 data-en="Architecture" data-pt="Arquitetura">Arquitetura</h2>
+        <ul>
+          <li data-en="Storage: AWS S3" data-pt="Armazenamento: AWS S3">Armazenamento: AWS S3</li>
+          <li data-en="Processing: Databricks" data-pt="Processamento: Databricks">Processamento: Databricks</li>
+          <li data-en="Table Format: Delta Lake" data-pt="Formato de Tabelas: Delta Lake">Formato de Tabelas: Delta Lake</li>
+          <li data-en="Orchestration: Airflow" data-pt="Orquestração: Airflow">Orquestração: Airflow</li>
+        </ul>
+
+        <h2 data-en="My Role" data-pt="Meu Papel">Meu Papel</h2>
+        <p data-en="I participated in the migration planning, data validation, and testing phases. Also helped document the new architecture and train team members on the new tools." data-pt="Participei das fases de planejamento da migração, validação de dados e testes. Também ajudei a documentar a nova arquitetura e treinar membros da equipe nas novas ferramentas.">
+          Participei das fases de planejamento da migração, validação de dados e testes. Também ajudei a documentar a nova arquitetura e treinar membros da equipe nas novas ferramentas.
+        </p>
+
+        <h2 data-en="Benefits" data-pt="Benefícios">Benefícios</h2>
+        <ul>
+          <li data-en="ACID transactions with Delta Lake" data-pt="Transações ACID com Delta Lake">Transações ACID com Delta Lake</li>
+          <li data-en="Better performance for large-scale analytics" data-pt="Melhor performance para analytics em larga escala">Melhor performance para analytics em larga escala</li>
+          <li data-en="Schema evolution support" data-pt="Suporte a evolução de schema">Suporte a evolução de schema</li>
+          <li data-en="Time travel capabilities" data-pt="Capacidades de time travel">Capacidades de time travel</li>
+          <li data-en="Unified batch and streaming" data-pt="Batch e streaming unificados">Batch e streaming unificados</li>
+        </ul>
+
+        <h2 data-en="Technologies" data-pt="Tecnologias">Tecnologias</h2>
+        <p data-en="Databricks, Delta Lake, AWS S3, Amazon Redshift, Python, SQL, Airflow" data-pt="Databricks, Delta Lake, AWS S3, Amazon Redshift, Python, SQL, Airflow">
+          Databricks, Delta Lake, AWS S3, Amazon Redshift, Python, SQL, Airflow
         </p>
       </article>
     </main>
@@ -55,12 +83,12 @@
       <div class="page-sidebar-section">
         <h3 class="page-sidebar-title" data-en="Other Projects" data-pt="Outros Projetos">Outros Projetos</h3>
         <ul class="page-sidebar-list">
-          <li><a href="project-1.html">Project Alpha</a></li>
-          <li><a href="project-2.html">Data Visualizer</a></li>
-          <li><a href="project-3.html">API Gateway</a></li>
-          <li><a href="project-4.html">Mobile App</a></li>
-          <li><a href="project-5.html">Web Platform</a></li>
-          <li><a href="project-6.html" class="active">Developer Tools</a></li>
+          <li><a href="project-1.html" data-en="Data Pipeline Automation" data-pt="Automação de Pipelines">Automação de Pipelines</a></li>
+          <li><a href="project-2.html" data-en="Executive Dashboards" data-pt="Dashboards Executivos">Dashboards Executivos</a></li>
+          <li><a href="project-3.html" data-en="AWS Cost Optimization" data-pt="Otimização de Custos AWS">Otimização de Custos AWS</a></li>
+          <li><a href="project-4.html" data-en="Financial Statements DB" data-pt="Base de Balanços">Base de Balanços</a></li>
+          <li><a href="project-5.html" data-en="Amazon Super Program" data-pt="Programa Amazon Super">Programa Amazon Super</a></li>
+          <li><a href="project-6.html" class="active" data-en="Data Lakehouse Migration" data-pt="Migração Data Lakehouse">Migração Data Lakehouse</a></li>
         </ul>
       </div>
     </aside>
