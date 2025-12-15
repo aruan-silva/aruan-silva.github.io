@@ -191,6 +191,8 @@ Na seção `.clients-row` do `index.html`:
 
 Edite a seção `.timeline` no `index.html`:
 
+### Posições Principais (círculos grandes)
+
 ```html
 <div class="timeline-item">
   <span class="timeline-year">2025</span>
@@ -203,6 +205,21 @@ Edite a seção `.timeline` no `index.html`:
 ```
 
 Para o item atual, adicione a classe `timeline-now`.
+
+### Marcos/Milestones (círculos menores entre anos)
+
+Use milestones para destacar conquistas menores entre os anos principais (ex: formatura, certificações, cursos):
+
+```html
+<div class="timeline-milestone">
+  <div class="milestone-marker"></div>
+  <div class="milestone-content">
+    <span data-pt="MBA Data Science" data-en="MBA Data Science">MBA Data Science</span>
+  </div>
+</div>
+```
+
+**Dica:** Posicione os milestones entre os `timeline-item` onde fizer sentido cronologicamente.
 
 ---
 
