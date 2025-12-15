@@ -16,7 +16,19 @@
       <div class="nav-links">
         <a href="#about" data-en="About" data-pt="Sobre">Sobre</a>
         <a href="#data-projects" data-en="Data Projects" data-pt="Projetos de Dados">Projetos de Dados</a>
-        <a href="#other-projects" data-en="Other Projects" data-pt="Outros Projetos">Outros Projetos</a>
+        <div class="nav-dropdown">
+          <a href="#mini-courses" class="nav-dropdown-trigger" data-en="Mini-Courses" data-pt="Mini-Cursos">
+            Mini-Cursos
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="courses/statistics-101.html" data-en="Statistics 101" data-pt="Estatística 101">Estatística 101</a>
+            <a href="courses/python-basics.html" data-en="Python Basics" data-pt="Python Básico">Python Básico</a>
+            <a href="courses/data-analysis.html" data-en="Data Analysis" data-pt="Análise de Dados">Análise de Dados</a>
+          </div>
+        </div>
         <a href="#articles" data-en="Articles" data-pt="Artigos">Artigos</a>
         <a href="#contact" data-en="Contact" data-pt="Contato">Contato</a>
       </div>
@@ -234,53 +246,108 @@
     </div>
   </section>
 
-  <section id="other-projects" class="section other-projects">
+  <!-- Companies & Clients Carousel -->
+  <section class="section clients-section">
     <div class="container">
-      <h2 class="section-title" data-en="Other Projects" data-pt="Outros Projetos">Outros Projetos</h2>
-      <p class="section-subtitle" data-en="External projects and websites I've worked on" data-pt="Projetos externos e sites em que trabalhei">Projetos externos e sites em que trabalhei</p>
-      <div class="external-links-grid">
-        <a href="https://example.com" target="_blank" rel="noopener" class="external-link-card">
-          <div class="external-link-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-              <polyline points="15 3 21 3 21 9"/>
-              <line x1="10" y1="14" x2="21" y2="3"/>
-            </svg>
+      <h2 class="section-title section-title-center" data-en="Companies & Clients" data-pt="Empresas & Clientes">Empresas & Clientes</h2>
+    </div>
+    <div class="clients-carousel">
+      <div class="clients-track">
+        <!-- First set of logos -->
+        <div class="client-logo">
+          <img src="images/clients/client-1.png" alt="Client 1">
+        </div>
+        <div class="client-logo">
+          <img src="images/clients/client-2.png" alt="Client 2">
+        </div>
+        <div class="client-logo">
+          <img src="images/clients/client-3.png" alt="Client 3">
+        </div>
+        <div class="client-logo">
+          <img src="images/clients/client-4.png" alt="Client 4">
+        </div>
+        <div class="client-logo">
+          <img src="images/clients/client-5.png" alt="Client 5">
+        </div>
+        <div class="client-logo">
+          <img src="images/clients/client-6.png" alt="Client 6">
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="client-logo">
+          <img src="images/clients/client-1.png" alt="Client 1">
+        </div>
+        <div class="client-logo">
+          <img src="images/clients/client-2.png" alt="Client 2">
+        </div>
+        <div class="client-logo">
+          <img src="images/clients/client-3.png" alt="Client 3">
+        </div>
+        <div class="client-logo">
+          <img src="images/clients/client-4.png" alt="Client 4">
+        </div>
+        <div class="client-logo">
+          <img src="images/clients/client-5.png" alt="Client 5">
+        </div>
+        <div class="client-logo">
+          <img src="images/clients/client-6.png" alt="Client 6">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mini-courses" class="section mini-courses">
+    <div class="container">
+      <h2 class="section-title" data-en="Mini-Courses" data-pt="Mini-Cursos">Mini-Cursos</h2>
+      <p class="section-subtitle" data-en="Free courses on data, statistics, and programming" data-pt="Cursos gratuitos sobre dados, estatística e programação">Cursos gratuitos sobre dados, estatística e programação</p>
+      <div class="courses-grid">
+        <a href="courses/statistics-101.html" class="course-card">
+          <div class="course-image">
+            <div class="course-placeholder gradient-1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 3v18h18"/>
+                <path d="M18 9l-5 5-4-4-3 3"/>
+              </svg>
+            </div>
           </div>
-          <div class="external-link-content">
-            <h3>Project Name</h3>
-            <p data-en="Brief description of the external project" data-pt="Breve descrição do projeto externo">Breve descrição do projeto externo</p>
-            <span class="external-link-url">example.com</span>
+          <div class="course-info">
+            <span class="course-tag" data-en="Statistics" data-pt="Estatística">Estatística</span>
+            <h3 data-en="Statistics 101" data-pt="Estatística 101">Estatística 101</h3>
+            <p data-en="Fundamentals of statistics for data analysis" data-pt="Fundamentos de estatística para análise de dados">Fundamentos de estatística para análise de dados</p>
+            <span class="course-meta" data-en="8 lessons • 2h 30min" data-pt="8 aulas • 2h 30min">8 aulas • 2h 30min</span>
           </div>
         </a>
 
-        <a href="https://example2.com" target="_blank" rel="noopener" class="external-link-card">
-          <div class="external-link-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-              <polyline points="15 3 21 3 21 9"/>
-              <line x1="10" y1="14" x2="21" y2="3"/>
-            </svg>
+        <a href="courses/python-basics.html" class="course-card">
+          <div class="course-image">
+            <div class="course-placeholder gradient-4">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
           </div>
-          <div class="external-link-content">
-            <h3>Another Project</h3>
-            <p data-en="Description of another website or project" data-pt="Descrição de outro site ou projeto">Descrição de outro site ou projeto</p>
-            <span class="external-link-url">example2.com</span>
+          <div class="course-info">
+            <span class="course-tag" data-en="Programming" data-pt="Programação">Programação</span>
+            <h3 data-en="Python Basics" data-pt="Python Básico">Python Básico</h3>
+            <p data-en="Introduction to Python programming" data-pt="Introdução à programação em Python">Introdução à programação em Python</p>
+            <span class="course-meta" data-en="10 lessons • 3h" data-pt="10 aulas • 3h">10 aulas • 3h</span>
           </div>
         </a>
 
-        <a href="https://example3.com" target="_blank" rel="noopener" class="external-link-card">
-          <div class="external-link-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-              <polyline points="15 3 21 3 21 9"/>
-              <line x1="10" y1="14" x2="21" y2="3"/>
-            </svg>
+        <a href="courses/data-analysis.html" class="course-card">
+          <div class="course-image">
+            <div class="course-placeholder gradient-3">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M3 9h18M9 21V9"/>
+              </svg>
+            </div>
           </div>
-          <div class="external-link-content">
-            <h3>Third Project</h3>
-            <p data-en="Description of a third external project" data-pt="Descrição de um terceiro projeto externo">Descrição de um terceiro projeto externo</p>
-            <span class="external-link-url">example3.com</span>
+          <div class="course-info">
+            <span class="course-tag" data-en="Data" data-pt="Dados">Dados</span>
+            <h3 data-en="Data Analysis" data-pt="Análise de Dados">Análise de Dados</h3>
+            <p data-en="Practical data analysis with Python and Pandas" data-pt="Análise de dados prática com Python e Pandas">Análise de dados prática com Python e Pandas</p>
+            <span class="course-meta" data-en="12 lessons • 4h" data-pt="12 aulas • 4h">12 aulas • 4h</span>
           </div>
         </a>
       </div>

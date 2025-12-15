@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Análise de Dados — Aruan Silva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="../index.html" class="logo">AS</a>
+      <div class="nav-links">
+        <a href="../index.html#about" data-en="About" data-pt="Sobre">Sobre</a>
+        <a href="../index.html#data-projects" data-en="Data Projects" data-pt="Projetos de Dados">Projetos de Dados</a>
+        <div class="nav-dropdown">
+          <a href="../index.html#mini-courses" class="nav-dropdown-trigger" data-en="Mini-Courses" data-pt="Mini-Cursos">
+            Mini-Cursos
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="statistics-101.html" data-en="Statistics 101" data-pt="Estatística 101">Estatística 101</a>
+            <a href="python-basics.html" data-en="Python Basics" data-pt="Python Básico">Python Básico</a>
+            <a href="data-analysis.html" data-en="Data Analysis" data-pt="Análise de Dados">Análise de Dados</a>
+          </div>
+        </div>
+        <a href="../index.html#articles" data-en="Articles" data-pt="Artigos">Artigos</a>
+        <a href="../index.html#contact" data-en="Contact" data-pt="Contato">Contato</a>
+      </div>
+      <div class="lang-wrapper">
+        <span class="lang-label" data-en="Language" data-pt="Idioma">Idioma</span>
+        <div class="lang-toggle">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn active" data-lang="pt">PT</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page-layout">
+    <aside class="page-toc">
+      <h3 class="page-toc-title" data-en="Contents" data-pt="Conteúdo">Conteúdo</h3>
+      <ul class="page-toc-list">
+        <li><a href="#intro" data-en="Introduction" data-pt="Introdução">Introdução</a></li>
+        <li><a href="#lesson-1" data-en="1. Pandas Basics" data-pt="1. Fundamentos do Pandas">1. Fundamentos do Pandas</a></li>
+        <li><a href="#lesson-2" data-en="2. Data Cleaning" data-pt="2. Limpeza de Dados">2. Limpeza de Dados</a></li>
+        <li><a href="#lesson-3" data-en="3. Visualization" data-pt="3. Visualização">3. Visualização</a></li>
+      </ul>
+    </aside>
+
+    <main class="page-main">
+      <header class="page-header">
+        <a href="../index.html#mini-courses" class="back-link" data-en="← Back to all courses" data-pt="← Voltar para todos os cursos">← Voltar para todos os cursos</a>
+        <span class="course-tag" data-en="Data" data-pt="Dados">Dados</span>
+        <h1 data-en="Data Analysis" data-pt="Análise de Dados">Análise de Dados</h1>
+        <p class="page-subtitle" data-en="Practical data analysis with Python and Pandas" data-pt="Análise de dados prática com Python e Pandas">Análise de dados prática com Python e Pandas</p>
+      </header>
+
+      <article class="page-content">
+        <section id="intro">
+          <h2 data-en="Introduction" data-pt="Introdução">Introdução</h2>
+          <p data-en="Learn practical data analysis techniques using Python, Pandas, and visualization libraries." data-pt="Aprenda técnicas práticas de análise de dados usando Python, Pandas e bibliotecas de visualização.">
+            Aprenda técnicas práticas de análise de dados usando Python, Pandas e bibliotecas de visualização.
+          </p>
+        </section>
+
+        <section id="lesson-1">
+          <h2 data-en="1. Pandas Basics" data-pt="1. Fundamentos do Pandas">1. Fundamentos do Pandas</h2>
+          <p data-en="DataFrames, Series, and basic operations." data-pt="DataFrames, Series e operações básicas.">
+            DataFrames, Series e operações básicas.
+          </p>
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+          </div>
+        </section>
+
+        <section id="lesson-2">
+          <h2 data-en="2. Data Cleaning" data-pt="2. Limpeza de Dados">2. Limpeza de Dados</h2>
+          <p data-en="Handling missing data, duplicates, and data transformation." data-pt="Lidando com dados ausentes, duplicatas e transformação de dados.">
+            Lidando com dados ausentes, duplicatas e transformação de dados.
+          </p>
+        </section>
+
+        <section id="lesson-3">
+          <h2 data-en="3. Visualization" data-pt="3. Visualização">3. Visualização</h2>
+          <p data-en="Creating charts with Matplotlib and Seaborn." data-pt="Criando gráficos com Matplotlib e Seaborn.">
+            Criando gráficos com Matplotlib e Seaborn.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <aside class="page-sidebar">
+      <h3 class="page-sidebar-title" data-en="Other Courses" data-pt="Outros Cursos">Outros Cursos</h3>
+      <ul class="page-sidebar-list">
+        <li><a href="statistics-101.html" data-en="Statistics 101" data-pt="Estatística 101">Estatística 101</a></li>
+        <li><a href="python-basics.html" data-en="Python Basics" data-pt="Python Básico">Python Básico</a></li>
+        <li><a href="data-analysis.html" class="active" data-en="Data Analysis" data-pt="Análise de Dados">Análise de Dados</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© Aruan Silva 2024</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
+
