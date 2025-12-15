@@ -52,6 +52,64 @@
   --color-border-light: #222222;
 }
 
+/* Dark Mode Specific Overrides */
+[data-theme="dark"] .lang-btn.active {
+  background: var(--color-primary);
+  color: #0f0f0f;
+}
+
+[data-theme="dark"] .hero-link-primary {
+  background: var(--color-primary);
+  color: #0f0f0f;
+  border-color: var(--color-primary);
+}
+
+[data-theme="dark"] .hero-link-primary:hover {
+  background: #3d84f5;
+}
+
+[data-theme="dark"] .client-tooltip {
+  background: var(--color-bg-white);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+[data-theme="dark"] .contact-btn {
+  background: var(--color-primary);
+  color: #0f0f0f;
+  border-color: var(--color-primary);
+}
+
+[data-theme="dark"] .contact-btn:hover {
+  background: #3d84f5;
+}
+
+[data-theme="dark"] .filter-tag.active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #0f0f0f;
+}
+
+[data-theme="dark"] .cta-btn {
+  background: var(--color-primary);
+  color: #0f0f0f;
+}
+
+[data-theme="dark"] .cta-btn:hover {
+  background: #3d84f5;
+}
+
+[data-theme="dark"] .cta-btn-outline {
+  background: transparent;
+  color: white;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+[data-theme="dark"] .cta-btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: white;
+}
+
 /* ===================================
    Reset & Base
    =================================== */
