@@ -898,8 +898,15 @@ a {
   flex-direction: column;
   align-items: center;
   position: relative;
-  /* Offset to align with main markers - year height + margin + partial marker offset */
-  padding-top: calc(1.5rem + 0.75rem + 16px);
+}
+
+.timeline-milestone .timeline-year {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+  background: var(--color-bg-white);
+  padding: 0 var(--space-xs);
 }
 
 .timeline-milestone .milestone-marker {
