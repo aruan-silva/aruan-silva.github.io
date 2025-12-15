@@ -839,6 +839,16 @@ a {
   line-height: 1.5rem;
 }
 
+.timeline-marker-year {
+  font-size: 0.9375rem;
+  font-weight: normal;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+  background: var(--color-bg-white);
+  padding: 0 var(--space-xs);
+  line-height: 1.5rem;
+}
+
 .timeline-no-year .timeline-year {
   visibility: hidden;
 }
