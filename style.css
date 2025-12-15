@@ -839,6 +839,10 @@ a {
   line-height: 1.5rem;
 }
 
+.timeline-no-year .timeline-year {
+  visibility: hidden;
+}
+
 .timeline-marker {
   width: 48px;
   height: 48px;
