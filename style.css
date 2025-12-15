@@ -565,7 +565,8 @@ a {
 }
 
 .timeline-now .timeline-marker {
-  background: var(--color-text);
+  background: var(--color-bg-white);
+  border-width: 3px;
 }
 
 .timeline-logo {
