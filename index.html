@@ -36,8 +36,12 @@
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="resume-dropdown-content">
-            <a href="files/resume-en.pdf" download data-en="🇺🇸 English" data-pt="🇺🇸 Inglês">🇺🇸 Inglês</a>
-            <a href="files/resume-pt.pdf" download data-en="🇧🇷 Portuguese" data-pt="🇧🇷 Português">🇧🇷 Português</a>
+            <span class="resume-dropdown-label">🇺🇸 English</span>
+            <a href="files/resume-en.pdf" download>PDF</a>
+            <a href="files/resume-en.docx" download>DOCX</a>
+            <span class="resume-dropdown-label">🇧🇷 Português</span>
+            <a href="files/resume-pt.pdf" download>PDF</a>
+            <a href="files/resume-pt.docx" download>DOCX</a>
           </div>
         </div>
       </div>
@@ -222,24 +226,22 @@
 
       <!-- Resume Download Section -->
       <div class="resume-hero-section">
-        <span class="resume-hero-label" data-en="Download my resume (PDF)" data-pt="Baixe meu currículo (PDF)">Baixe meu currículo (PDF)</span>
+        <span class="resume-hero-label" data-en="Download my resume" data-pt="Baixe meu currículo">Baixe meu currículo</span>
         <div class="resume-hero-buttons">
-          <a href="files/resume-en.pdf" download class="resume-hero-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-              <polyline points="7 10 12 15 17 10"/>
-              <line x1="12" y1="15" x2="12" y2="3"/>
-            </svg>
-            🇺🇸 English
-          </a>
-          <a href="files/resume-pt.pdf" download class="resume-hero-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-              <polyline points="7 10 12 15 17 10"/>
-              <line x1="12" y1="15" x2="12" y2="3"/>
-            </svg>
-            🇧🇷 Português
-          </a>
+          <div class="resume-hero-group">
+            <span class="resume-hero-flag">🇺🇸 English</span>
+            <div class="resume-hero-formats">
+              <a href="files/resume-en.pdf" download class="resume-hero-btn">PDF</a>
+              <a href="files/resume-en.docx" download class="resume-hero-btn">DOCX</a>
+            </div>
+          </div>
+          <div class="resume-hero-group">
+            <span class="resume-hero-flag">🇧🇷 Português</span>
+            <div class="resume-hero-formats">
+              <a href="files/resume-pt.pdf" download class="resume-hero-btn">PDF</a>
+              <a href="files/resume-pt.docx" download class="resume-hero-btn">DOCX</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

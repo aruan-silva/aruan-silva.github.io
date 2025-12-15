@@ -187,19 +187,23 @@ Na seção `.clients-row` do `index.html`:
 
 ---
 
-## 📄 Currículo / Resume (PDF)
+## 📄 Currículo / Resume (PDF & DOCX)
 
-O site permite download do currículo em inglês e português. Os arquivos ficam na pasta `files/`:
+O site permite download do currículo em inglês e português, nos formatos PDF e DOCX. Os arquivos ficam na pasta `files/`:
 
-- `files/resume-en.pdf` - Currículo em inglês
-- `files/resume-pt.pdf` - Currículo em português
+### English
+- `files/resume-en.pdf` - Currículo em inglês (PDF)
+- `files/resume-en.docx` - Currículo em inglês (Word)
 
-Para atualizar, simplesmente substitua os arquivos PDF mantendo os mesmos nomes.
+### Português (Brasil)
+- `files/resume-pt.pdf` - Currículo em português (PDF)
+- `files/resume-pt.docx` - Currículo em português (Word)
+
+Para atualizar, simplesmente substitua os arquivos mantendo os mesmos nomes.
 
 **Locais onde aparece:**
-- Menu de navegação (dropdown)
-- Seção hero da página inicial
-- Seção de contato
+- Menu de navegação (dropdown com opções de idioma e formato)
+- Seção "Sobre" da página inicial
 
 ---
 
