@@ -570,9 +570,10 @@ a {
 }
 
 .timeline-logo {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .timeline-logos img {
