@@ -16,9 +16,30 @@
       <div class="nav-links">
         <a href="index.html#about" data-en="About" data-pt="Sobre">Sobre</a>
         <a href="projects.html" data-en="Data Projects" data-pt="Projetos de Dados">Projetos de Dados</a>
-        <a href="courses.html" data-en="Mini-Courses" data-pt="Mini-Cursos">Mini-Cursos</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-btn" data-en="Mini-Courses" data-pt="Mini-Cursos">
+            Mini-Cursos
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav-dropdown-content">
+            <a href="courses/statistics-101.html" data-en="📊 Statistics 101" data-pt="📊 Estatística 101">📊 Estatística 101</a>
+            <a href="courses/python-basics.html" data-en="🐍 Python Basics" data-pt="🐍 Python Básico">🐍 Python Básico</a>
+            <a href="courses/data-analysis.html" data-en="📈 Data Analysis" data-pt="📈 Análise de Dados">📈 Análise de Dados</a>
+            <a href="courses.html" class="nav-dropdown-all" data-en="View all courses →" data-pt="Ver todos os cursos →">Ver todos os cursos →</a>
+          </div>
+        </div>
         <a href="articles.html" class="active" data-en="Articles" data-pt="Artigos">Artigos</a>
         <a href="index.html#contact" data-en="Contact" data-pt="Contato">Contato</a>
+        <div class="resume-dropdown">
+          <button class="resume-btn-nav" data-en="📄 Resume" data-pt="📄 Currículo">
+            📄 Currículo
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="resume-dropdown-content">
+            <a href="files/resume-en.pdf" download data-en="🇺🇸 English" data-pt="🇺🇸 Inglês">🇺🇸 Inglês</a>
+            <a href="files/resume-pt.pdf" download data-en="🇧🇷 Portuguese" data-pt="🇧🇷 Português">🇧🇷 Português</a>
+          </div>
+        </div>
       </div>
       <div class="nav-toggles">
         <button class="theme-toggle" aria-label="Toggle theme">
