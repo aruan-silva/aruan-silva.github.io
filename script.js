@@ -130,6 +130,33 @@ if (mobileMenuBtn && navLinksContainer) {
 }
 
 // ===================================
+// Articles Category Filter
+// ===================================
+const filterTags = document.querySelectorAll('.filter-tag');
+const articleCards = document.querySelectorAll('.article-card');
+
+if (filterTags.length > 0) {
+  filterTags.forEach(tag => {
+    tag.addEventListener('click', () => {
+      // Update active state
+      filterTags.forEach(t => t.classList.remove('active'));
+      tag.classList.add('active');
+      
+      const filter = tag.dataset.filter;
+      
+      // Filter articles
+      articleCards.forEach(card => {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+}
+
+// ===================================
 // TOC Active State for Course Pages
 // ===================================
 const tocLinks = document.querySelectorAll('.toc-list a');

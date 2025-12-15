@@ -71,7 +71,7 @@ Edite na seção `#contact` do `index.html`:
 1. Duplique um arquivo em `projects/` (ex: `project-1.html`)
 2. Renomeie para `project-7.html`
 3. Edite o conteúdo do arquivo
-4. Adicione o card na seção `#data-projects` do `index.html`:
+4. Adicione o card **no início** da seção `#data-projects` do `index.html` (o primeiro é o destaque):
 
 ```html
 <a href="projects/project-7.html" class="portfolio-card">
@@ -87,6 +87,10 @@ Edite na seção `#contact` do `index.html`:
 </a>
 ```
 
+5. Atualize a sidebar dos outros projetos
+
+**Regra:** O primeiro projeto no grid é sempre considerado o destaque/mais recente.
+
 ### Gradientes Disponíveis | Available Gradients
 `gradient-1` a `gradient-6` (roxo, rosa, azul, verde, laranja, pastel)
 
@@ -99,17 +103,32 @@ Edite na seção `#contact` do `index.html`:
 1. Duplique um arquivo em `blog/` (ex: `post-1.html`)
 2. Renomeie para `post-4.html`
 3. Edite o conteúdo
-4. Adicione na lista do `index.html` seção `#articles`:
+4. Adicione na página `articles.html`:
+   - **Destaque**: Atualize a seção `articles-featured` com o novo artigo
+   - **Grid**: Adicione o card **no topo** da `articles-grid` (o primeiro é sempre o mais recente)
 
 ```html
-<a href="blog/post-4.html" class="blog-item">
-  <time datetime="2025-01-15" data-pt="Jan 2025" data-en="Jan 2025">Jan 2025</time>
-  <h3 data-pt="Título do Artigo" data-en="Article Title">Título do Artigo</h3>
-  <span class="blog-arrow">→</span>
+<a href="blog/post-4.html" class="article-card" data-category="career">
+  <div class="article-card-image">
+    <div class="article-placeholder gradient-1"><!-- SVG --></div>
+  </div>
+  <div class="article-card-content">
+    <span class="article-category" data-pt="Carreira" data-en="Career">Carreira</span>
+    <h3 data-pt="Título" data-en="Title">Título</h3>
+    <p data-pt="Descrição" data-en="Description">Descrição</p>
+    <time datetime="2025-01-15" data-pt="Jan 2025" data-en="Jan 2025">Jan 2025</time>
+  </div>
 </a>
 ```
 
-5. Atualize a sidebar dos outros artigos
+5. Atualize também a seção `#articles` no `index.html` (preview com 3 artigos)
+6. Atualize a sidebar dos outros artigos
+
+### Categorias Disponíveis | Available Categories
+- `career` - Carreira
+- `data` - Dados
+- `business` - Negócios
+- `tech` - Tecnologia
 
 ---
 
@@ -120,8 +139,25 @@ Edite na seção `#contact` do `index.html`:
 1. Duplique um arquivo em `courses/` (ex: `statistics-101.html`)
 2. Renomeie (ex: `machine-learning.html`)
 3. Edite o conteúdo e seções
-4. Adicione o card na seção `#mini-courses` do `index.html`
+4. Adicione o card **no início** da seção `#mini-courses` do `index.html` (o primeiro é o destaque):
+
+```html
+<a href="courses/novo-curso.html" class="course-card">
+  <div class="course-image">
+    <div class="course-placeholder gradient-1"><!-- SVG --></div>
+  </div>
+  <div class="course-info">
+    <span class="course-tag" data-pt="Categoria" data-en="Category">Categoria</span>
+    <h3 data-pt="Nome do Curso" data-en="Course Name">Nome do Curso</h3>
+    <p data-pt="Descrição" data-en="Description">Descrição</p>
+    <span class="course-meta" data-pt="X aulas • Yh" data-en="X lessons • Yh">X aulas • Yh</span>
+  </div>
+</a>
+```
+
 5. Atualize a sidebar dos outros cursos
+
+**Regra:** O primeiro curso no grid é sempre considerado o destaque/mais recente.
 
 ### Adicionar Vídeo do YouTube | Add YouTube Video
 
