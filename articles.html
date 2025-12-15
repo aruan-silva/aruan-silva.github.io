@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artigos — Aruan Silva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">AS</a>
+      <div class="nav-links">
+        <a href="index.html#about" data-en="About" data-pt="Sobre">Sobre</a>
+        <a href="index.html#data-projects" data-en="Data Projects" data-pt="Projetos de Dados">Projetos de Dados</a>
+        <a href="index.html#mini-courses" data-en="Mini-Courses" data-pt="Mini-Cursos">Mini-Cursos</a>
+        <a href="articles.html" class="active" data-en="Articles" data-pt="Artigos">Artigos</a>
+        <a href="index.html#contact" data-en="Contact" data-pt="Contato">Contato</a>
+      </div>
+      <div class="lang-wrapper">
+        <span class="lang-label" data-en="Language" data-pt="Idioma">Idioma</span>
+        <div class="lang-toggle">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn active" data-lang="pt">PT</button>
+        </div>
+      </div>
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="articles-page">
+    <!-- Hero Section -->
+    <header class="articles-hero">
+      <div class="container">
+        <h1 data-en="Articles" data-pt="Artigos">Artigos</h1>
+        <p class="articles-hero-subtitle" data-en="Thoughts on data, business analysis, career, and technology" data-pt="Reflexões sobre dados, análise de negócios, carreira e tecnologia">
+          Reflexões sobre dados, análise de negócios, carreira e tecnologia
+        </p>
+      </div>
+    </header>
+
+    <!-- Featured Article -->
+    <section class="articles-featured">
+      <div class="container">
+        <a href="blog/post-1.html" class="featured-card">
+          <div class="featured-image">
+            <div class="featured-placeholder gradient-1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+          </div>
+          <div class="featured-content">
+            <span class="article-category" data-en="Career" data-pt="Carreira">Carreira</span>
+            <h2 data-en="From Marketing to Data: My Career Transition" data-pt="De Marketing para Dados: Minha Transição de Carreira">De Marketing para Dados: Minha Transição de Carreira</h2>
+            <p data-en="When I started my career in marketing at Digital Gurus and then Amazon, I had no idea that data would become my passion. Here's how my journey unfolded." data-pt="Quando comecei minha carreira em marketing na Digital Gurus e depois na Amazon, não fazia ideia de que dados se tornariam minha paixão. Aqui está como minha jornada se desenrolou.">
+              Quando comecei minha carreira em marketing na Digital Gurus e depois na Amazon, não fazia ideia de que dados se tornariam minha paixão. Aqui está como minha jornada se desenrolou.
+            </p>
+            <div class="featured-meta">
+              <time datetime="2024-12-01" data-en="December 1, 2024" data-pt="1 de Dezembro de 2024">1 de Dezembro de 2024</time>
+              <span class="read-more" data-en="Read article →" data-pt="Ler artigo →">Ler artigo →</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="articles-filter">
+      <div class="container">
+        <div class="filter-tags">
+          <button class="filter-tag active" data-filter="all" data-en="All" data-pt="Todos">Todos</button>
+          <button class="filter-tag" data-filter="career" data-en="Career" data-pt="Carreira">Carreira</button>
+          <button class="filter-tag" data-filter="data" data-en="Data" data-pt="Dados">Dados</button>
+          <button class="filter-tag" data-filter="business" data-en="Business" data-pt="Negócios">Negócios</button>
+          <button class="filter-tag" data-filter="tech" data-en="Technology" data-pt="Tecnologia">Tecnologia</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles Grid -->
+    <section class="articles-grid-section">
+      <div class="container">
+        <div class="articles-grid">
+          
+          <a href="blog/post-1.html" class="article-card" data-category="career">
+            <div class="article-card-image">
+              <div class="article-placeholder gradient-1">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+              </div>
+            </div>
+            <div class="article-card-content">
+              <span class="article-category" data-en="Career" data-pt="Carreira">Carreira</span>
+              <h3 data-en="From Marketing to Data: My Career Transition" data-pt="De Marketing para Dados: Minha Transição de Carreira">De Marketing para Dados: Minha Transição de Carreira</h3>
+              <p data-en="How I transitioned from marketing to data analysis and what I learned along the way." data-pt="Como fiz a transição de marketing para análise de dados e o que aprendi no caminho.">
+                Como fiz a transição de marketing para análise de dados e o que aprendi no caminho.
+              </p>
+              <time datetime="2024-12-01" data-en="Dec 2024" data-pt="Dez 2024">Dez 2024</time>
+            </div>
+          </a>
+
+          <a href="blog/post-2.html" class="article-card" data-category="data">
+            <div class="article-card-image">
+              <div class="article-placeholder gradient-2">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                  <path d="M3 9h18M9 21V9"/>
+                </svg>
+              </div>
+            </div>
+            <div class="article-card-content">
+              <span class="article-category" data-en="Data" data-pt="Dados">Dados</span>
+              <h3 data-en="Building Data Products: Lessons Learned" data-pt="Construindo Produtos de Dados: Lições Aprendidas">Construindo Produtos de Dados: Lições Aprendidas</h3>
+              <p data-en="Key insights from building data products that users actually want to use." data-pt="Principais insights sobre construir produtos de dados que os usuários realmente querem usar.">
+                Principais insights sobre construir produtos de dados que os usuários realmente querem usar.
+              </p>
+              <time datetime="2024-10-15" data-en="Oct 2024" data-pt="Out 2024">Out 2024</time>
+            </div>
+          </a>
+
+          <a href="blog/post-3.html" class="article-card" data-category="business">
+            <div class="article-card-image">
+              <div class="article-placeholder gradient-3">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+              </div>
+            </div>
+            <div class="article-card-content">
+              <span class="article-category" data-en="Business" data-pt="Negócios">Negócios</span>
+              <h3 data-en="The Business Analyst Role in Tech Companies" data-pt="O Papel do Business Analyst em Empresas de Tecnologia">O Papel do Business Analyst em Empresas de Tecnologia</h3>
+              <p data-en="What does a Business Analyst do at companies like Nubank? Here's my perspective." data-pt="O que um Business Analyst faz em empresas como o Nubank? Aqui está minha perspectiva.">
+                O que um Business Analyst faz em empresas como o Nubank? Aqui está minha perspectiva.
+              </p>
+              <time datetime="2024-08-22" data-en="Aug 2024" data-pt="Ago 2024">Ago 2024</time>
+            </div>
+          </a>
+
+          <!-- Placeholder for future articles -->
+          <a href="#" class="article-card article-card-coming" data-category="tech">
+            <div class="article-card-image">
+              <div class="article-placeholder gradient-4">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+            </div>
+            <div class="article-card-content">
+              <span class="article-category" data-en="Technology" data-pt="Tecnologia">Tecnologia</span>
+              <h3 data-en="SQL Tips for Business Analysts" data-pt="Dicas de SQL para Business Analysts">Dicas de SQL para Business Analysts</h3>
+              <p data-en="Practical SQL techniques that will improve your daily work." data-pt="Técnicas práticas de SQL que vão melhorar seu trabalho diário.">
+                Técnicas práticas de SQL que vão melhorar seu trabalho diário.
+              </p>
+              <span class="coming-soon-tag" data-en="Coming soon" data-pt="Em breve">Em breve</span>
+            </div>
+          </a>
+
+          <a href="#" class="article-card article-card-coming" data-category="data">
+            <div class="article-card-image">
+              <div class="article-placeholder gradient-5">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M3 3v18h18"/>
+                  <path d="M18 9l-5 5-4-4-3 3"/>
+                </svg>
+              </div>
+            </div>
+            <div class="article-card-content">
+              <span class="article-category" data-en="Data" data-pt="Dados">Dados</span>
+              <h3 data-en="Building Dashboards that Tell Stories" data-pt="Construindo Dashboards que Contam Histórias">Construindo Dashboards que Contam Histórias</h3>
+              <p data-en="How to create visualizations that communicate insights effectively." data-pt="Como criar visualizações que comunicam insights de forma eficaz.">
+                Como criar visualizações que comunicam insights de forma eficaz.
+              </p>
+              <span class="coming-soon-tag" data-en="Coming soon" data-pt="Em breve">Em breve</span>
+            </div>
+          </a>
+
+          <a href="#" class="article-card article-card-coming" data-category="career">
+            <div class="article-card-image">
+              <div class="article-placeholder gradient-6">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                  <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+              </div>
+            </div>
+            <div class="article-card-content">
+              <span class="article-category" data-en="Career" data-pt="Carreira">Carreira</span>
+              <h3 data-en="How to Prepare for Data Interviews" data-pt="Como se Preparar para Entrevistas de Dados">Como se Preparar para Entrevistas de Dados</h3>
+              <p data-en="Tips and resources for landing your next data role." data-pt="Dicas e recursos para conseguir sua próxima vaga em dados.">
+                Dicas e recursos para conseguir sua próxima vaga em dados.
+              </p>
+              <span class="coming-soon-tag" data-en="Coming soon" data-pt="Em breve">Em breve</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="articles-newsletter">
+      <div class="container">
+        <div class="newsletter-card">
+          <h2 data-en="Stay Updated" data-pt="Fique Atualizado">Fique Atualizado</h2>
+          <p data-en="Follow me on LinkedIn to get notified when new articles are published." data-pt="Siga-me no LinkedIn para ser notificado quando novos artigos forem publicados.">
+            Siga-me no LinkedIn para ser notificado quando novos artigos forem publicados.
+          </p>
+          <a href="https://linkedin.com/in/aruansilva" target="_blank" rel="noopener" class="newsletter-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+            <span data-en="Follow on LinkedIn" data-pt="Seguir no LinkedIn">Seguir no LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p data-en="© Aruan Silva 2024 • Florianópolis, Brazil" data-pt="© Aruan Silva 2024 • Florianópolis, Brasil">© Aruan Silva 2024 • Florianópolis, Brasil</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
