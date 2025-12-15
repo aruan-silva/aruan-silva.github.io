@@ -18,6 +18,12 @@ function setLanguage(lang) {
     }
   });
 
+  // Show/hide language-specific elements
+  document.querySelectorAll('[data-lang-show]').forEach(el => {
+    const showLang = el.getAttribute('data-lang-show');
+    el.style.display = showLang === lang ? 'block' : 'none';
+  });
+
   // Update html lang attribute
   document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
 

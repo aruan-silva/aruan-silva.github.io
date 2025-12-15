@@ -874,6 +874,32 @@ a {
   margin-bottom: var(--space-xs);
 }
 
+/* Disclaimer Banner */
+.disclaimer-banner {
+  background: linear-gradient(135deg, #fff3cd 0%, #ffeeba 100%);
+  border: 1px solid #ffc107;
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.disclaimer-banner p {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: #856404;
+  line-height: 1.6;
+}
+
+.disclaimer-banner a {
+  color: #664d03;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.disclaimer-banner a:hover {
+  color: #533f03;
+}
+
 /* Video Embed */
 .video-container {
   position: relative;
