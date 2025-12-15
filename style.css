@@ -133,6 +133,15 @@
   border-color: var(--color-border);
 }
 
+[data-theme="dark"] .nav-dropdown-content {
+  background: var(--color-bg-white);
+  border-color: var(--color-border);
+}
+
+[data-theme="dark"] .nav-dropdown-content a:hover {
+  background: var(--color-bg);
+}
+
 [data-theme="dark"] .cta-btn-outline {
   background: transparent;
   color: white;
@@ -231,6 +240,81 @@ a {
 
 .nav-links a:hover {
   color: var(--color-text);
+}
+
+/* Nav Dropdown - For menu items with sublists */
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-dropdown-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+  padding: 0;
+}
+
+.nav-dropdown-btn:hover {
+  color: var(--color-text);
+}
+
+.nav-dropdown-btn svg {
+  transition: transform var(--transition-fast);
+}
+
+.nav-dropdown:hover .nav-dropdown-btn svg {
+  transform: rotate(180deg);
+}
+
+.nav-dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+  margin-top: 0.75rem;
+  background: var(--color-bg-white);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-fast);
+  min-width: 200px;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.nav-dropdown:hover .nav-dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.nav-dropdown-content a {
+  display: block;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text);
+  transition: background var(--transition-fast);
+}
+
+.nav-dropdown-content a:hover {
+  background: var(--color-bg);
+}
+
+.nav-dropdown-all {
+  border-top: 1px solid var(--color-border-light);
+  color: var(--color-primary) !important;
+  font-weight: 600 !important;
 }
 
 /* Resume Download Dropdown - Navigation */
