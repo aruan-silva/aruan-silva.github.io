@@ -915,6 +915,8 @@ a {
   background: var(--color-bg-white);
   border: 2px solid var(--color-text-secondary);
   border-radius: 50%;
+  /* Push down to align center with timeline line (48px/2 - 24px/2 = 12px) */
+  margin-top: 12px;
   margin-bottom: var(--space-xs);
   position: relative;
   z-index: 1;
