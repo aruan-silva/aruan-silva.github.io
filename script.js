@@ -1,4 +1,27 @@
 // ===================================
+// Theme Toggle (Light/Dark)
+// ===================================
+const themeToggle = document.querySelector('.theme-toggle');
+const savedTheme = localStorage.getItem('preferredTheme') || 'light';
+
+function setTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  localStorage.setItem('preferredTheme', theme);
+}
+
+// Initialize theme
+setTheme(savedTheme);
+
+// Theme toggle click handler
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+  });
+}
+
+// ===================================
 // Language Toggle
 // ===================================
 const langButtons = document.querySelectorAll('.lang-btn');
