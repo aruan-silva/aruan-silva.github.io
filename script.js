@@ -1,183 +1,154 @@
-/**
- * Clean, modern interactions with language toggle
- * Default language: Brazilian Portuguese (pt)
- */
+// ===================================
+// Language Toggle
+// ===================================
+const langButtons = document.querySelectorAll('.lang-btn');
+const savedLang = localStorage.getItem('preferredLang') || 'pt';
 
-document.addEventListener('DOMContentLoaded', () => {
-  initScrollReveal();
-  initSmoothScroll();
-  initNavHighlight();
-  initMobileMenu();
-  initLanguageToggle();
-});
-
-/**
- * Reveal sections on scroll
- */
-function initScrollReveal() {
-  const sections = document.querySelectorAll('.section');
-  
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-  });
-  
-  sections.forEach(section => observer.observe(section));
-}
-
-/**
- * Smooth scrolling for anchor links
- */
-function initSmoothScroll() {
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener('click', (e) => {
-      const href = link.getAttribute('href');
-      if (href === '#') return;
-      
-      const target = document.querySelector(href);
-      if (target) {
-        e.preventDefault();
-        const navHeight = document.querySelector('.nav').offsetHeight;
-        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 20;
-        
-        window.scrollTo({
-          top: targetPosition,
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
-}
-
-/**
- * Highlight active nav link
- */
-function initNavHighlight() {
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav-links a');
-  
-  const updateActive = () => {
-    const scrollPos = window.scrollY + 150;
-    
-    sections.forEach(section => {
-      const top = section.offsetTop;
-      const height = section.offsetHeight;
-      const id = section.getAttribute('id');
-      
-      if (scrollPos >= top && scrollPos < top + height) {
-        navLinks.forEach(link => {
-          link.style.color = '';
-          if (link.getAttribute('href') === `#${id}`) {
-            link.style.color = 'var(--color-text)';
-          }
-        });
-      }
-    });
-  };
-  
-  let ticking = false;
-  window.addEventListener('scroll', () => {
-    if (!ticking) {
-      requestAnimationFrame(() => {
-        updateActive();
-        ticking = false;
-      });
-      ticking = true;
-    }
-  });
-  
-  updateActive();
-}
-
-/**
- * Mobile menu toggle
- */
-function initMobileMenu() {
-  const btn = document.querySelector('.mobile-menu-btn');
-  const nav = document.querySelector('.nav-links');
-  
-  if (!btn || !nav) return;
-  
-  btn.addEventListener('click', () => {
-    nav.classList.toggle('open');
-    btn.classList.toggle('open');
-  });
-}
-
-/**
- * Language Toggle (PT/EN)
- * Default: Brazilian Portuguese (pt)
- */
-function initLanguageToggle() {
-  const langButtons = document.querySelectorAll('.lang-btn');
-  
-  // Get saved language or default to Portuguese
-  const savedLang = localStorage.getItem('language') || 'pt';
-  
-  // Apply saved language on load
-  setLanguage(savedLang);
-  
-  // Update button states
-  langButtons.forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.lang === savedLang);
-    
-    btn.addEventListener('click', () => {
-      const lang = btn.dataset.lang;
-      setLanguage(lang);
-      localStorage.setItem('language', lang);
-      
-      // Update button states
-      langButtons.forEach(b => b.classList.toggle('active', b === btn));
-    });
-  });
-}
-
-/**
- * Set language for all translatable elements
- */
 function setLanguage(lang) {
-  // Update HTML lang attribute
-  document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
-  
-  // Find all elements with data-en and data-pt attributes
-  const translatableElements = document.querySelectorAll('[data-en][data-pt]');
-  
-  translatableElements.forEach(el => {
-    const text = lang === 'pt' ? el.dataset.pt : el.dataset.en;
-    
-    // Check if element has child elements (like icons)
-    const hasChildElements = el.querySelector('svg, img');
-    
-    if (hasChildElements) {
-      // For elements with icons, find and update only text nodes
-      const childNodes = Array.from(el.childNodes);
-      let hasTextNode = false;
-      
-      childNodes.forEach(node => {
-        if (node.nodeType === Node.TEXT_NODE && node.textContent.trim()) {
-          node.textContent = '\n          ' + text + '\n        ';
-          hasTextNode = true;
-        }
-      });
-      
-      // If no text node found, append the text
-      if (!hasTextNode) {
-        // Find existing text and replace
-        const textContent = el.textContent.trim();
-        if (textContent) {
-          el.innerHTML = el.innerHTML.replace(textContent, text);
-        }
-      }
-    } else {
-      // Simple text element
+  // Update active button
+  langButtons.forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.lang === lang);
+  });
+
+  // Update all text elements with data-en and data-pt attributes
+  document.querySelectorAll('[data-en][data-pt]').forEach(el => {
+    const text = el.getAttribute(`data-${lang}`);
+    if (text) {
       el.textContent = text;
     }
   });
+
+  // Update html lang attribute
+  document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+
+  // Save preference
+  localStorage.setItem('preferredLang', lang);
+}
+
+// Initialize language
+setLanguage(savedLang);
+
+// Language button click handlers
+langButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    setLanguage(btn.dataset.lang);
+  });
+});
+
+// ===================================
+// Scroll Reveal Animation
+// ===================================
+const sections = document.querySelectorAll('.section');
+
+const revealSection = (entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15,
+});
+
+sections.forEach(section => {
+  sectionObserver.observe(section);
+});
+
+// ===================================
+// Smooth Scroll for Anchor Links
+// ===================================
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href');
+    
+    if (targetId === '#') return;
+    
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      const navHeight = document.querySelector('.nav')?.offsetHeight || 64;
+      const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight - 20;
+      
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+
+// ===================================
+// Navigation Active State
+// ===================================
+const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+
+function updateActiveNavLink() {
+  const scrollPosition = window.scrollY + 100;
+  
+  navLinks.forEach(link => {
+    const targetId = link.getAttribute('href');
+    if (targetId.startsWith('#')) {
+      const targetSection = document.querySelector(targetId);
+      if (targetSection) {
+        const sectionTop = targetSection.offsetTop;
+        const sectionHeight = targetSection.offsetHeight;
+        
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      }
+    }
+  });
+}
+
+window.addEventListener('scroll', updateActiveNavLink);
+updateActiveNavLink();
+
+// ===================================
+// Mobile Menu Toggle (placeholder)
+// ===================================
+const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+const navLinksContainer = document.querySelector('.nav-links');
+
+if (mobileMenuBtn && navLinksContainer) {
+  mobileMenuBtn.addEventListener('click', () => {
+    navLinksContainer.classList.toggle('mobile-open');
+    mobileMenuBtn.classList.toggle('open');
+  });
+}
+
+// ===================================
+// TOC Active State for Course Pages
+// ===================================
+const tocLinks = document.querySelectorAll('.toc-list a');
+
+if (tocLinks.length > 0) {
+  function updateActiveTocLink() {
+    const scrollPosition = window.scrollY + 150;
+    
+    tocLinks.forEach(link => {
+      const targetId = link.getAttribute('href');
+      if (targetId && targetId.startsWith('#')) {
+        const targetSection = document.querySelector(targetId);
+        if (targetSection) {
+          const sectionTop = targetSection.offsetTop;
+          const sectionHeight = targetSection.offsetHeight;
+          
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            tocLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+          }
+        }
+      }
+    });
+  }
+  
+  window.addEventListener('scroll', updateActiveTocLink);
+  updateActiveTocLink();
 }

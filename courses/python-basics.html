@@ -16,19 +16,7 @@
       <div class="nav-links">
         <a href="../index.html#about" data-en="About" data-pt="Sobre">Sobre</a>
         <a href="../index.html#data-projects" data-en="Data Projects" data-pt="Projetos de Dados">Projetos de Dados</a>
-        <div class="nav-dropdown">
-          <a href="../index.html#mini-courses" class="nav-dropdown-trigger" data-en="Mini-Courses" data-pt="Mini-Cursos">
-            Mini-Cursos
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-          </a>
-          <div class="nav-dropdown-menu">
-            <a href="statistics-101.html" data-en="Statistics 101" data-pt="Estatística 101">Estatística 101</a>
-            <a href="python-basics.html" data-en="Python Basics" data-pt="Python Básico">Python Básico</a>
-            <a href="data-analysis.html" data-en="Data Analysis" data-pt="Análise de Dados">Análise de Dados</a>
-          </div>
-        </div>
+        <a href="../index.html#mini-courses" data-en="Mini-Courses" data-pt="Mini-Cursos">Mini-Cursos</a>
         <a href="../index.html#articles" data-en="Articles" data-pt="Artigos">Artigos</a>
         <a href="../index.html#contact" data-en="Contact" data-pt="Contato">Contato</a>
       </div>
@@ -42,17 +30,7 @@
     </div>
   </nav>
 
-  <div class="page-layout">
-    <aside class="page-toc">
-      <h3 class="page-toc-title" data-en="Contents" data-pt="Conteúdo">Conteúdo</h3>
-      <ul class="page-toc-list">
-        <li><a href="#intro" data-en="Introduction" data-pt="Introdução">Introdução</a></li>
-        <li><a href="#lesson-1" data-en="1. Getting Started" data-pt="1. Primeiros Passos">1. Primeiros Passos</a></li>
-        <li><a href="#lesson-2" data-en="2. Variables & Types" data-pt="2. Variáveis e Tipos">2. Variáveis e Tipos</a></li>
-        <li><a href="#lesson-3" data-en="3. Control Flow" data-pt="3. Controle de Fluxo">3. Controle de Fluxo</a></li>
-      </ul>
-    </aside>
-
+  <div class="page-with-sidebar">
     <main class="page-main">
       <header class="page-header">
         <a href="../index.html#mini-courses" class="back-link" data-en="← Back to all courses" data-pt="← Voltar para todos os cursos">← Voltar para todos os cursos</a>
@@ -64,31 +42,31 @@
       <article class="page-content">
         <section id="intro">
           <h2 data-en="Introduction" data-pt="Introdução">Introdução</h2>
-          <p data-en="Learn Python from scratch! This course covers the fundamental concepts of Python programming." data-pt="Aprenda Python do zero! Este curso cobre os conceitos fundamentais de programação em Python.">
-            Aprenda Python do zero! Este curso cobre os conceitos fundamentais de programação em Python.
+          <p data-en="Learn Python from scratch!" data-pt="Aprenda Python do zero!">
+            Aprenda Python do zero! Este curso cobre os conceitos fundamentais.
           </p>
         </section>
 
         <section id="lesson-1">
           <h2 data-en="1. Getting Started" data-pt="1. Primeiros Passos">1. Primeiros Passos</h2>
-          <p data-en="Setting up your Python development environment." data-pt="Configurando seu ambiente de desenvolvimento Python.">
+          <p data-en="Setting up your environment." data-pt="Configurando seu ambiente.">
             Configurando seu ambiente de desenvolvimento Python.
           </p>
           <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
           </div>
         </section>
 
         <section id="lesson-2">
           <h2 data-en="2. Variables & Types" data-pt="2. Variáveis e Tipos">2. Variáveis e Tipos</h2>
-          <p data-en="Understanding Python data types and variables." data-pt="Entendendo tipos de dados e variáveis em Python.">
+          <p data-en="Understanding data types." data-pt="Entendendo tipos de dados.">
             Entendendo tipos de dados e variáveis em Python.
           </p>
         </section>
 
         <section id="lesson-3">
           <h2 data-en="3. Control Flow" data-pt="3. Controle de Fluxo">3. Controle de Fluxo</h2>
-          <p data-en="If statements, loops, and control structures." data-pt="Declarações if, loops e estruturas de controle.">
+          <p data-en="If statements and loops." data-pt="Declarações if e loops.">
             Declarações if, loops e estruturas de controle.
           </p>
         </section>
@@ -96,12 +74,24 @@
     </main>
 
     <aside class="page-sidebar">
-      <h3 class="page-sidebar-title" data-en="Other Courses" data-pt="Outros Cursos">Outros Cursos</h3>
-      <ul class="page-sidebar-list">
-        <li><a href="statistics-101.html" data-en="Statistics 101" data-pt="Estatística 101">Estatística 101</a></li>
-        <li><a href="python-basics.html" class="active" data-en="Python Basics" data-pt="Python Básico">Python Básico</a></li>
-        <li><a href="data-analysis.html" data-en="Data Analysis" data-pt="Análise de Dados">Análise de Dados</a></li>
-      </ul>
+      <div class="page-sidebar-section">
+        <h3 class="page-sidebar-title" data-en="Contents" data-pt="Conteúdo">Conteúdo</h3>
+        <ul class="page-sidebar-list toc-list">
+          <li><a href="#intro" data-en="Introduction" data-pt="Introdução">Introdução</a></li>
+          <li><a href="#lesson-1" data-en="1. Getting Started" data-pt="1. Primeiros Passos">1. Primeiros Passos</a></li>
+          <li><a href="#lesson-2" data-en="2. Variables & Types" data-pt="2. Variáveis e Tipos">2. Variáveis e Tipos</a></li>
+          <li><a href="#lesson-3" data-en="3. Control Flow" data-pt="3. Controle de Fluxo">3. Controle de Fluxo</a></li>
+        </ul>
+      </div>
+
+      <div class="page-sidebar-section">
+        <h3 class="page-sidebar-title" data-en="Other Courses" data-pt="Outros Cursos">Outros Cursos</h3>
+        <ul class="page-sidebar-list">
+          <li><a href="statistics-101.html" data-en="Statistics 101" data-pt="Estatística 101">Estatística 101</a></li>
+          <li><a href="python-basics.html" class="active" data-en="Python Basics" data-pt="Python Básico">Python Básico</a></li>
+          <li><a href="data-analysis.html" data-en="Data Analysis" data-pt="Análise de Dados">Análise de Dados</a></li>
+        </ul>
+      </div>
     </aside>
   </div>
 
@@ -114,4 +104,3 @@
   <script src="../script.js"></script>
 </body>
 </html>
-

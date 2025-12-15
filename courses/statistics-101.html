@@ -16,19 +16,7 @@
       <div class="nav-links">
         <a href="../index.html#about" data-en="About" data-pt="Sobre">Sobre</a>
         <a href="../index.html#data-projects" data-en="Data Projects" data-pt="Projetos de Dados">Projetos de Dados</a>
-        <div class="nav-dropdown">
-          <a href="../index.html#mini-courses" class="nav-dropdown-trigger" data-en="Mini-Courses" data-pt="Mini-Cursos">
-            Mini-Cursos
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-          </a>
-          <div class="nav-dropdown-menu">
-            <a href="statistics-101.html" data-en="Statistics 101" data-pt="Estatística 101">Estatística 101</a>
-            <a href="python-basics.html" data-en="Python Basics" data-pt="Python Básico">Python Básico</a>
-            <a href="data-analysis.html" data-en="Data Analysis" data-pt="Análise de Dados">Análise de Dados</a>
-          </div>
-        </div>
+        <a href="../index.html#mini-courses" data-en="Mini-Courses" data-pt="Mini-Cursos">Mini-Cursos</a>
         <a href="../index.html#articles" data-en="Articles" data-pt="Artigos">Artigos</a>
         <a href="../index.html#contact" data-en="Contact" data-pt="Contato">Contato</a>
       </div>
@@ -42,24 +30,7 @@
     </div>
   </nav>
 
-  <div class="page-layout">
-    <!-- Left Sidebar - Table of Contents -->
-    <aside class="page-toc">
-      <h3 class="page-toc-title" data-en="Contents" data-pt="Conteúdo">Conteúdo</h3>
-      <ul class="page-toc-list">
-        <li><a href="#intro" data-en="Introduction" data-pt="Introdução">Introdução</a></li>
-        <li><a href="#lesson-1" data-en="1. What is Statistics?" data-pt="1. O que é Estatística?">1. O que é Estatística?</a></li>
-        <li><a href="#lesson-2" data-en="2. Types of Data" data-pt="2. Tipos de Dados">2. Tipos de Dados</a></li>
-        <li><a href="#lesson-3" data-en="3. Measures of Central Tendency" data-pt="3. Medidas de Tendência Central">3. Medidas de Tendência Central</a></li>
-        <li><a href="#lesson-4" data-en="4. Measures of Dispersion" data-pt="4. Medidas de Dispersão">4. Medidas de Dispersão</a></li>
-        <li><a href="#lesson-5" data-en="5. Probability Basics" data-pt="5. Noções de Probabilidade">5. Noções de Probabilidade</a></li>
-        <li><a href="#lesson-6" data-en="6. Normal Distribution" data-pt="6. Distribuição Normal">6. Distribuição Normal</a></li>
-        <li><a href="#lesson-7" data-en="7. Hypothesis Testing" data-pt="7. Teste de Hipóteses">7. Teste de Hipóteses</a></li>
-        <li><a href="#lesson-8" data-en="8. Correlation & Regression" data-pt="8. Correlação e Regressão">8. Correlação e Regressão</a></li>
-      </ul>
-    </aside>
-
-    <!-- Main Content -->
+  <div class="page-with-sidebar">
     <main class="page-main">
       <header class="page-header">
         <a href="../index.html#mini-courses" class="back-link" data-en="← Back to all courses" data-pt="← Voltar para todos os cursos">← Voltar para todos os cursos</a>
@@ -76,184 +47,130 @@
           </p>
           
           <div class="video-container">
-            <iframe 
-              src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
-              title="Introduction to Statistics"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-            </iframe>
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
           </div>
         </section>
 
         <section id="lesson-1">
           <h2 data-en="1. What is Statistics?" data-pt="1. O que é Estatística?">1. O que é Estatística?</h2>
-          <p data-en="Statistics is the science of collecting, organizing, analyzing, and interpreting data to make informed decisions." data-pt="Estatística é a ciência de coletar, organizar, analisar e interpretar dados para tomar decisões informadas.">
-            Estatística é a ciência de coletar, organizar, analisar e interpretar dados para tomar decisões informadas.
+          <p data-en="Statistics is the science of collecting, organizing, analyzing, and interpreting data." data-pt="Estatística é a ciência de coletar, organizar, analisar e interpretar dados.">
+            Estatística é a ciência de coletar, organizar, analisar e interpretar dados.
           </p>
           
           <div class="video-container">
-            <iframe 
-              src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
-              title="What is Statistics"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-            </iframe>
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
           </div>
 
-          <h3 data-en="Descriptive vs. Inferential Statistics" data-pt="Estatística Descritiva vs. Inferencial">Estatística Descritiva vs. Inferencial</h3>
-          <p data-en="There are two main branches of statistics:" data-pt="Existem dois ramos principais da estatística:">
-            Existem dois ramos principais da estatística:
-          </p>
+          <h3 data-en="Descriptive vs. Inferential" data-pt="Descritiva vs. Inferencial">Descritiva vs. Inferencial</h3>
           <ul>
-            <li data-en="Descriptive Statistics: Summarizes and describes data" data-pt="Estatística Descritiva: Resume e descreve dados">Estatística Descritiva: Resume e descreve dados</li>
-            <li data-en="Inferential Statistics: Makes predictions based on data" data-pt="Estatística Inferencial: Faz previsões baseadas em dados">Estatística Inferencial: Faz previsões baseadas em dados</li>
+            <li data-en="Descriptive: Summarizes data" data-pt="Descritiva: Resume dados">Descritiva: Resume dados</li>
+            <li data-en="Inferential: Makes predictions" data-pt="Inferencial: Faz previsões">Inferencial: Faz previsões</li>
           </ul>
         </section>
 
         <section id="lesson-2">
           <h2 data-en="2. Types of Data" data-pt="2. Tipos de Dados">2. Tipos de Dados</h2>
-          <p data-en="Understanding the types of data is fundamental for choosing the right statistical methods." data-pt="Entender os tipos de dados é fundamental para escolher os métodos estatísticos corretos.">
-            Entender os tipos de dados é fundamental para escolher os métodos estatísticos corretos.
+          <p data-en="Understanding data types is fundamental for choosing statistical methods." data-pt="Entender os tipos de dados é fundamental para escolher métodos estatísticos.">
+            Entender os tipos de dados é fundamental para escolher métodos estatísticos.
           </p>
           
           <div class="video-container">
-            <iframe 
-              src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
-              title="Types of Data"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-            </iframe>
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
           </div>
-
-          <h3 data-en="Qualitative Data" data-pt="Dados Qualitativos">Dados Qualitativos</h3>
-          <p data-en="Categorical data that describes qualities or characteristics (e.g., colors, names, categories)." data-pt="Dados categóricos que descrevem qualidades ou características (ex: cores, nomes, categorias).">
-            Dados categóricos que descrevem qualidades ou características (ex: cores, nomes, categorias).
-          </p>
-
-          <h3 data-en="Quantitative Data" data-pt="Dados Quantitativos">Dados Quantitativos</h3>
-          <p data-en="Numerical data that can be measured (e.g., height, weight, temperature)." data-pt="Dados numéricos que podem ser medidos (ex: altura, peso, temperatura).">
-            Dados numéricos que podem ser medidos (ex: altura, peso, temperatura).
-          </p>
         </section>
 
         <section id="lesson-3">
-          <h2 data-en="3. Measures of Central Tendency" data-pt="3. Medidas de Tendência Central">3. Medidas de Tendência Central</h2>
-          <p data-en="Central tendency measures help us understand the 'typical' value in a dataset." data-pt="Medidas de tendência central nos ajudam a entender o valor 'típico' em um conjunto de dados.">
-            Medidas de tendência central nos ajudam a entender o valor 'típico' em um conjunto de dados.
+          <h2 data-en="3. Central Tendency" data-pt="3. Tendência Central">3. Tendência Central</h2>
+          <p data-en="Mean, median, and mode help us understand typical values." data-pt="Média, mediana e moda nos ajudam a entender valores típicos.">
+            Média, mediana e moda nos ajudam a entender valores típicos.
           </p>
           
           <div class="video-container">
-            <iframe 
-              src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
-              title="Central Tendency"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-            </iframe>
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
           </div>
-
-          <ul>
-            <li data-en="Mean: The arithmetic average" data-pt="Média: A média aritmética">Média: A média aritmética</li>
-            <li data-en="Median: The middle value" data-pt="Mediana: O valor do meio">Mediana: O valor do meio</li>
-            <li data-en="Mode: The most frequent value" data-pt="Moda: O valor mais frequente">Moda: O valor mais frequente</li>
-          </ul>
         </section>
 
         <section id="lesson-4">
-          <h2 data-en="4. Measures of Dispersion" data-pt="4. Medidas de Dispersão">4. Medidas de Dispersão</h2>
-          <p data-en="Dispersion measures tell us how spread out the data is." data-pt="Medidas de dispersão nos dizem quão espalhados estão os dados.">
+          <h2 data-en="4. Dispersion" data-pt="4. Dispersão">4. Dispersão</h2>
+          <p data-en="Dispersion measures tell us how spread out data is." data-pt="Medidas de dispersão nos dizem quão espalhados estão os dados.">
             Medidas de dispersão nos dizem quão espalhados estão os dados.
           </p>
           
           <div class="video-container">
-            <iframe 
-              src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
-              title="Measures of Dispersion"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-            </iframe>
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
           </div>
         </section>
 
         <section id="lesson-5">
-          <h2 data-en="5. Probability Basics" data-pt="5. Noções de Probabilidade">5. Noções de Probabilidade</h2>
+          <h2 data-en="5. Probability" data-pt="5. Probabilidade">5. Probabilidade</h2>
           <p data-en="Probability is the foundation of statistical inference." data-pt="Probabilidade é a base da inferência estatística.">
             Probabilidade é a base da inferência estatística.
           </p>
           
           <div class="video-container">
-            <iframe 
-              src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
-              title="Probability Basics"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-            </iframe>
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
           </div>
         </section>
 
         <section id="lesson-6">
           <h2 data-en="6. Normal Distribution" data-pt="6. Distribuição Normal">6. Distribuição Normal</h2>
-          <p data-en="The normal distribution, also known as the bell curve, is one of the most important concepts in statistics." data-pt="A distribuição normal, também conhecida como curva de sino, é um dos conceitos mais importantes em estatística.">
-            A distribuição normal, também conhecida como curva de sino, é um dos conceitos mais importantes em estatística.
+          <p data-en="The bell curve is one of the most important concepts." data-pt="A curva de sino é um dos conceitos mais importantes.">
+            A curva de sino é um dos conceitos mais importantes.
           </p>
           
           <div class="video-container">
-            <iframe 
-              src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
-              title="Normal Distribution"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-            </iframe>
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
           </div>
         </section>
 
         <section id="lesson-7">
           <h2 data-en="7. Hypothesis Testing" data-pt="7. Teste de Hipóteses">7. Teste de Hipóteses</h2>
-          <p data-en="Hypothesis testing is a method used to make statistical decisions using experimental data." data-pt="O teste de hipóteses é um método usado para tomar decisões estatísticas usando dados experimentais.">
-            O teste de hipóteses é um método usado para tomar decisões estatísticas usando dados experimentais.
+          <p data-en="Making statistical decisions using data." data-pt="Tomando decisões estatísticas usando dados.">
+            Tomando decisões estatísticas usando dados.
           </p>
           
           <div class="video-container">
-            <iframe 
-              src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
-              title="Hypothesis Testing"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-            </iframe>
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
           </div>
         </section>
 
         <section id="lesson-8">
           <h2 data-en="8. Correlation & Regression" data-pt="8. Correlação e Regressão">8. Correlação e Regressão</h2>
-          <p data-en="Learn how to measure relationships between variables and make predictions." data-pt="Aprenda a medir relacionamentos entre variáveis e fazer previsões.">
-            Aprenda a medir relacionamentos entre variáveis e fazer previsões.
+          <p data-en="Measuring relationships and making predictions." data-pt="Medindo relacionamentos e fazendo previsões.">
+            Medindo relacionamentos e fazendo previsões.
           </p>
           
           <div class="video-container">
-            <iframe 
-              src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
-              title="Correlation and Regression"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-            </iframe>
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
           </div>
         </section>
       </article>
     </main>
 
-    <!-- Right Sidebar - Other Courses -->
     <aside class="page-sidebar">
-      <h3 class="page-sidebar-title" data-en="Other Courses" data-pt="Outros Cursos">Outros Cursos</h3>
-      <ul class="page-sidebar-list">
-        <li>
-          <a href="statistics-101.html" class="active" data-en="Statistics 101" data-pt="Estatística 101">Estatística 101</a>
-        </li>
-        <li>
-          <a href="python-basics.html" data-en="Python Basics" data-pt="Python Básico">Python Básico</a>
-        </li>
-        <li>
-          <a href="data-analysis.html" data-en="Data Analysis" data-pt="Análise de Dados">Análise de Dados</a>
-        </li>
-      </ul>
+      <div class="page-sidebar-section">
+        <h3 class="page-sidebar-title" data-en="Contents" data-pt="Conteúdo">Conteúdo</h3>
+        <ul class="page-sidebar-list toc-list">
+          <li><a href="#intro" data-en="Introduction" data-pt="Introdução">Introdução</a></li>
+          <li><a href="#lesson-1" data-en="1. What is Statistics?" data-pt="1. O que é Estatística?">1. O que é Estatística?</a></li>
+          <li><a href="#lesson-2" data-en="2. Types of Data" data-pt="2. Tipos de Dados">2. Tipos de Dados</a></li>
+          <li><a href="#lesson-3" data-en="3. Central Tendency" data-pt="3. Tendência Central">3. Tendência Central</a></li>
+          <li><a href="#lesson-4" data-en="4. Dispersion" data-pt="4. Dispersão">4. Dispersão</a></li>
+          <li><a href="#lesson-5" data-en="5. Probability" data-pt="5. Probabilidade">5. Probabilidade</a></li>
+          <li><a href="#lesson-6" data-en="6. Normal Distribution" data-pt="6. Distribuição Normal">6. Distribuição Normal</a></li>
+          <li><a href="#lesson-7" data-en="7. Hypothesis Testing" data-pt="7. Teste de Hipóteses">7. Teste de Hipóteses</a></li>
+          <li><a href="#lesson-8" data-en="8. Correlation & Regression" data-pt="8. Correlação e Regressão">8. Correlação e Regressão</a></li>
+        </ul>
+      </div>
+
+      <div class="page-sidebar-section">
+        <h3 class="page-sidebar-title" data-en="Other Courses" data-pt="Outros Cursos">Outros Cursos</h3>
+        <ul class="page-sidebar-list">
+          <li><a href="statistics-101.html" class="active" data-en="Statistics 101" data-pt="Estatística 101">Estatística 101</a></li>
+          <li><a href="python-basics.html" data-en="Python Basics" data-pt="Python Básico">Python Básico</a></li>
+          <li><a href="data-analysis.html" data-en="Data Analysis" data-pt="Análise de Dados">Análise de Dados</a></li>
+        </ul>
+      </div>
     </aside>
   </div>
 
@@ -264,31 +181,5 @@
   </footer>
 
   <script src="../script.js"></script>
-  <script>
-    // Highlight current section in TOC
-    const observerOptions = {
-      root: null,
-      rootMargin: '-100px 0px -70% 0px',
-      threshold: 0
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          document.querySelectorAll('.page-toc-list a').forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === '#' + entry.target.id) {
-              link.classList.add('active');
-            }
-          });
-        }
-      });
-    }, observerOptions);
-
-    document.querySelectorAll('section[id]').forEach(section => {
-      observer.observe(section);
-    });
-  </script>
 </body>
 </html>
-

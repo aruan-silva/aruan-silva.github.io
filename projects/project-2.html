@@ -16,19 +16,7 @@
       <div class="nav-links">
         <a href="../index.html#about" data-en="About" data-pt="Sobre">Sobre</a>
         <a href="../index.html#data-projects" data-en="Data Projects" data-pt="Projetos de Dados">Projetos de Dados</a>
-        <div class="nav-dropdown">
-          <a href="../index.html#mini-courses" class="nav-dropdown-trigger" data-en="Mini-Courses" data-pt="Mini-Cursos">
-            Mini-Cursos
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-          </a>
-          <div class="nav-dropdown-menu">
-            <a href="../courses/statistics-101.html" data-en="Statistics 101" data-pt="Estatística 101">Estatística 101</a>
-            <a href="../courses/python-basics.html" data-en="Python Basics" data-pt="Python Básico">Python Básico</a>
-            <a href="../courses/data-analysis.html" data-en="Data Analysis" data-pt="Análise de Dados">Análise de Dados</a>
-          </div>
-        </div>
+        <a href="../index.html#mini-courses" data-en="Mini-Courses" data-pt="Mini-Cursos">Mini-Cursos</a>
         <a href="../index.html#articles" data-en="Articles" data-pt="Artigos">Artigos</a>
         <a href="../index.html#contact" data-en="Contact" data-pt="Contato">Contato</a>
       </div>
@@ -42,48 +30,51 @@
     </div>
   </nav>
 
-  <div class="blog-layout">
-    <main class="blog-main">
-      <header class="blog-header-inline">
+  <div class="page-with-sidebar">
+    <main class="page-main">
+      <header class="page-header">
         <a href="../index.html#data-projects" class="back-link" data-en="← Back to all projects" data-pt="← Voltar para todos os projetos">← Voltar para todos os projetos</a>
         <h1>Data Visualizer</h1>
-        <p style="color: var(--color-text-secondary); font-size: 1.125rem;" data-en="Elegant dashboard for data analysis and visualization with D3.js" data-pt="Dashboard elegante para análise e visualização de dados com D3.js">Dashboard elegante para análise e visualização de dados com D3.js</p>
+        <p class="page-subtitle" data-en="Elegant dashboard for data analysis and visualization with D3.js" data-pt="Dashboard elegante para análise e visualização de dados com D3.js">Dashboard elegante para análise e visualização de dados com D3.js</p>
         <div class="project-tags">
-          <span>TypeScript</span>
           <span>D3.js</span>
-          <span>Python</span>
-          <span>Pandas</span>
+          <span>React</span>
+          <span>Node.js</span>
         </div>
       </header>
 
-      <article class="blog-content-inline">
+      <article class="page-content">
         <h2 data-en="Overview" data-pt="Visão Geral">Visão Geral</h2>
-        <p data-en="Data Visualizer is an elegant and intuitive dashboard solution for data analysis. It transforms complex datasets into actionable insights through beautiful visualizations." data-pt="Data Visualizer é uma solução de dashboard elegante e intuitiva para análise de dados. Transforma conjuntos de dados complexos em insights acionáveis através de visualizações bonitas.">
-          Data Visualizer é uma solução de dashboard elegante e intuitiva para análise de dados. Transforma conjuntos de dados complexos em insights acionáveis através de visualizações bonitas.
+        <p data-en="An interactive data visualization platform." data-pt="Uma plataforma interativa de visualização de dados.">
+          Uma plataforma interativa de visualização de dados com gráficos customizáveis e exportação de relatórios.
         </p>
-
-        <h2 data-en="Interactive Dashboard" data-pt="Dashboard Interativo">Dashboard Interativo</h2>
-        <div class="embed-container">
-          <iframe src="https://YOUR_DASHBOARD_URL" allowfullscreen></iframe>
-        </div>
 
         <h2 data-en="Features" data-pt="Funcionalidades">Funcionalidades</h2>
-        <p data-en="The visualizer includes interactive charts, real-time data updates, and customizable themes." data-pt="O visualizador inclui gráficos interativos, atualizações de dados em tempo real e temas customizáveis.">
-          O visualizador inclui gráficos interativos, atualizações de dados em tempo real e temas customizáveis.
-        </p>
+        <ul>
+          <li data-en="Interactive charts" data-pt="Gráficos interativos">Gráficos interativos</li>
+          <li data-en="Real-time data updates" data-pt="Atualizações em tempo real">Atualizações em tempo real</li>
+          <li data-en="Export to PDF/PNG" data-pt="Exportação para PDF/PNG">Exportação para PDF/PNG</li>
+        </ul>
+
+        <h2 data-en="Demo" data-pt="Demonstração">Demonstração</h2>
+        <div class="embed-container">
+          <iframe src="https://your-demo-url.com" frameborder="0"></iframe>
+        </div>
       </article>
     </main>
 
-    <aside class="blog-sidebar">
-      <h3 class="blog-sidebar-title" data-en="Other Projects" data-pt="Outros Projetos">Outros Projetos</h3>
-      <ul class="blog-sidebar-list">
-        <li><a href="project-1.html">Project Alpha</a></li>
-        <li><a href="project-2.html" class="active">Data Visualizer</a></li>
-        <li><a href="project-3.html">API Gateway</a></li>
-        <li><a href="project-4.html">Mobile App</a></li>
-        <li><a href="project-5.html">Web Platform</a></li>
-        <li><a href="project-6.html">Developer Tools</a></li>
-      </ul>
+    <aside class="page-sidebar">
+      <div class="page-sidebar-section">
+        <h3 class="page-sidebar-title" data-en="Other Projects" data-pt="Outros Projetos">Outros Projetos</h3>
+        <ul class="page-sidebar-list">
+          <li><a href="project-1.html">Project Alpha</a></li>
+          <li><a href="project-2.html" class="active">Data Visualizer</a></li>
+          <li><a href="project-3.html">API Gateway</a></li>
+          <li><a href="project-4.html">Mobile App</a></li>
+          <li><a href="project-5.html">Web Platform</a></li>
+          <li><a href="project-6.html">Developer Tools</a></li>
+        </ul>
+      </div>
     </aside>
   </div>
 

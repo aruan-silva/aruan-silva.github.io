@@ -16,7 +16,7 @@
       <div class="nav-links">
         <a href="../index.html#about" data-en="About" data-pt="Sobre">Sobre</a>
         <a href="../index.html#data-projects" data-en="Data Projects" data-pt="Projetos de Dados">Projetos de Dados</a>
-        <a href="../index.html#other-projects" data-en="Other Projects" data-pt="Outros Projetos">Outros Projetos</a>
+        <a href="../index.html#mini-courses" data-en="Mini-Courses" data-pt="Mini-Cursos">Mini-Cursos</a>
         <a href="../index.html#articles" data-en="Articles" data-pt="Artigos">Artigos</a>
         <a href="../index.html#contact" data-en="Contact" data-pt="Contato">Contato</a>
       </div>
@@ -30,31 +30,41 @@
     </div>
   </nav>
 
-  <header class="project-header">
-    <a href="../index.html#data-projects" class="back-link" data-en="← Back to all projects" data-pt="← Voltar para todos os projetos">← Voltar para todos os projetos</a>
-    <h1>Web Platform</h1>
-    <p class="project-subtitle" data-en="Scalable web platform serving thousands of concurrent users" data-pt="Plataforma web escalável atendendo milhares de usuários simultâneos">Plataforma web escalável atendendo milhares de usuários simultâneos</p>
-    <div class="project-tags">
-      <span>Next.js</span>
-      <span>TypeScript</span>
-      <span>AWS</span>
-    </div>
-  </header>
+  <div class="page-with-sidebar">
+    <main class="page-main">
+      <header class="page-header">
+        <a href="../index.html#data-projects" class="back-link" data-en="← Back to all projects" data-pt="← Voltar para todos os projetos">← Voltar para todos os projetos</a>
+        <h1>Web Platform</h1>
+        <p class="page-subtitle" data-en="Scalable web platform serving thousands of concurrent users" data-pt="Plataforma web escalável atendendo milhares de usuários simultâneos">Plataforma web escalável atendendo milhares de usuários simultâneos</p>
+        <div class="project-tags">
+          <span>Next.js</span>
+          <span>PostgreSQL</span>
+          <span>AWS</span>
+        </div>
+      </header>
 
-  <article class="project-content">
-    <h2 data-en="Overview" data-pt="Visão Geral">Visão Geral</h2>
-    <p data-en="A scalable web platform designed to handle high traffic and serve thousands of concurrent users with optimal performance." data-pt="Uma plataforma web escalável projetada para lidar com alto tráfego e atender milhares de usuários simultâneos com performance otimizada.">
-      Uma plataforma web escalável projetada para lidar com alto tráfego e atender milhares de usuários simultâneos com performance otimizada.
-    </p>
+      <article class="page-content">
+        <h2 data-en="Overview" data-pt="Visão Geral">Visão Geral</h2>
+        <p data-en="A scalable web platform." data-pt="Uma plataforma web escalável.">
+          Uma plataforma web escalável construída com arquitetura serverless.
+        </p>
+      </article>
+    </main>
 
-    <h2 data-en="Traffic Dashboard" data-pt="Dashboard de Tráfego">Dashboard de Tráfego</h2>
-    <div class="embed-container">
-      <iframe 
-        src="https://YOUR_TRAFFIC_DASHBOARD_URL" 
-        allowfullscreen>
-      </iframe>
-    </div>
-  </article>
+    <aside class="page-sidebar">
+      <div class="page-sidebar-section">
+        <h3 class="page-sidebar-title" data-en="Other Projects" data-pt="Outros Projetos">Outros Projetos</h3>
+        <ul class="page-sidebar-list">
+          <li><a href="project-1.html">Project Alpha</a></li>
+          <li><a href="project-2.html">Data Visualizer</a></li>
+          <li><a href="project-3.html">API Gateway</a></li>
+          <li><a href="project-4.html">Mobile App</a></li>
+          <li><a href="project-5.html" class="active">Web Platform</a></li>
+          <li><a href="project-6.html">Developer Tools</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
 
   <footer class="footer">
     <div class="container footer-inner">
@@ -65,4 +75,3 @@
   <script src="../script.js"></script>
 </body>
 </html>
-
