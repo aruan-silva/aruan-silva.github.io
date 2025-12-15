@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini-Cursos — Aruan Silva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">AS</a>
+      <div class="nav-links">
+        <a href="index.html#about" data-en="About" data-pt="Sobre">Sobre</a>
+        <a href="projects.html" data-en="Data Projects" data-pt="Projetos de Dados">Projetos de Dados</a>
+        <a href="courses.html" class="active" data-en="Mini-Courses" data-pt="Mini-Cursos">Mini-Cursos</a>
+        <a href="articles.html" data-en="Articles" data-pt="Artigos">Artigos</a>
+        <a href="index.html#contact" data-en="Contact" data-pt="Contato">Contato</a>
+      </div>
+      <div class="lang-wrapper">
+        <span class="lang-label" data-en="Language" data-pt="Idioma">Idioma</span>
+        <div class="lang-toggle">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn active" data-lang="pt">PT</button>
+        </div>
+      </div>
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="courses-page">
+    <!-- Hero Section -->
+    <header class="page-hero">
+      <div class="container">
+        <h1 data-en="Mini-Courses" data-pt="Mini-Cursos">Mini-Cursos</h1>
+        <p class="page-hero-subtitle" data-en="Free courses on data, statistics, and programming to help you advance your career" data-pt="Cursos gratuitos sobre dados, estatística e programação para ajudar você a avançar na carreira">
+          Cursos gratuitos sobre dados, estatística e programação para ajudar você a avançar na carreira
+        </p>
+      </div>
+    </header>
+
+    <!-- English Disclaimer -->
+    <div class="container">
+      <div class="disclaimer-banner" data-lang-show="en">
+        <p>
+          ⚠️ <strong>Note:</strong> Course content is currently only available in Portuguese and is a work in progress. 
+          For English content, please check out the <a href="articles.html">Articles</a> section.
+        </p>
+      </div>
+    </div>
+
+    <!-- Featured Course -->
+    <section class="content-featured">
+      <div class="container">
+        <a href="courses/statistics-101.html" class="featured-card">
+          <div class="featured-image">
+            <div class="featured-placeholder gradient-1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 3v18h18"/>
+                <path d="M18 9l-5 5-4-4-3 3"/>
+              </svg>
+            </div>
+          </div>
+          <div class="featured-content">
+            <span class="article-category" data-en="Statistics" data-pt="Estatística">Estatística</span>
+            <h2 data-en="Statistics 101" data-pt="Estatística 101">Estatística 101</h2>
+            <p data-en="Learn the fundamental concepts of statistics that every data professional needs to know. From basic concepts to hypothesis testing." data-pt="Aprenda os conceitos fundamentais de estatística que todo profissional de dados precisa conhecer. Dos conceitos básicos aos testes de hipóteses.">
+              Aprenda os conceitos fundamentais de estatística que todo profissional de dados precisa conhecer. Dos conceitos básicos aos testes de hipóteses.
+            </p>
+            <div class="featured-meta">
+              <span class="course-duration" data-en="8 lessons • 2h 30min" data-pt="8 aulas • 2h 30min">8 aulas • 2h 30min</span>
+              <span class="read-more" data-en="Start course →" data-pt="Começar curso →">Começar curso →</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="content-filter">
+      <div class="container">
+        <div class="filter-tags">
+          <button class="filter-tag active" data-filter="all" data-en="All" data-pt="Todos">Todos</button>
+          <button class="filter-tag" data-filter="statistics" data-en="Statistics" data-pt="Estatística">Estatística</button>
+          <button class="filter-tag" data-filter="programming" data-en="Programming" data-pt="Programação">Programação</button>
+          <button class="filter-tag" data-filter="data" data-en="Data" data-pt="Dados">Dados</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Grid -->
+    <section class="content-grid-section">
+      <div class="container">
+        <div class="content-grid">
+          
+          <a href="courses/statistics-101.html" class="content-card" data-category="statistics">
+            <div class="content-card-image">
+              <div class="content-placeholder gradient-1">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M3 3v18h18"/>
+                  <path d="M18 9l-5 5-4-4-3 3"/>
+                </svg>
+              </div>
+            </div>
+            <div class="content-card-body">
+              <span class="content-tag" data-en="Statistics" data-pt="Estatística">Estatística</span>
+              <h3 data-en="Statistics 101" data-pt="Estatística 101">Estatística 101</h3>
+              <p data-en="Fundamentals of statistics for data analysis" data-pt="Fundamentos de estatística para análise de dados">
+                Fundamentos de estatística para análise de dados
+              </p>
+              <span class="course-meta-tag" data-en="8 lessons • 2h 30min" data-pt="8 aulas • 2h 30min">8 aulas • 2h 30min</span>
+            </div>
+          </a>
+
+          <a href="courses/python-basics.html" class="content-card" data-category="programming">
+            <div class="content-card-image">
+              <div class="content-placeholder gradient-4">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+            </div>
+            <div class="content-card-body">
+              <span class="content-tag" data-en="Programming" data-pt="Programação">Programação</span>
+              <h3 data-en="Python for Data" data-pt="Python para Dados">Python para Dados</h3>
+              <p data-en="Introduction to Python programming for data analysis" data-pt="Introdução à programação em Python para análise de dados">
+                Introdução à programação em Python para análise de dados
+              </p>
+              <span class="course-meta-tag" data-en="10 lessons • 3h" data-pt="10 aulas • 3h">10 aulas • 3h</span>
+            </div>
+          </a>
+
+          <a href="courses/data-analysis.html" class="content-card" data-category="data">
+            <div class="content-card-image">
+              <div class="content-placeholder gradient-3">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                  <path d="M3 9h18M9 21V9"/>
+                </svg>
+              </div>
+            </div>
+            <div class="content-card-body">
+              <span class="content-tag" data-en="Data" data-pt="Dados">Dados</span>
+              <h3 data-en="SQL for Analysis" data-pt="SQL para Análise">SQL para Análise</h3>
+              <p data-en="Practical SQL for business analysis" data-pt="SQL prático para análise de negócios">
+                SQL prático para análise de negócios
+              </p>
+              <span class="course-meta-tag" data-en="12 lessons • 4h" data-pt="12 aulas • 4h">12 aulas • 4h</span>
+            </div>
+          </a>
+
+          <!-- Coming Soon Courses -->
+          <div class="content-card content-card-coming" data-category="data">
+            <div class="content-card-image">
+              <div class="content-placeholder gradient-2">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                  <path d="M3 9h18M9 21V9"/>
+                </svg>
+              </div>
+            </div>
+            <div class="content-card-body">
+              <span class="content-tag" data-en="Data" data-pt="Dados">Dados</span>
+              <h3 data-en="Data Visualization" data-pt="Visualização de Dados">Visualização de Dados</h3>
+              <p data-en="Creating impactful charts and dashboards" data-pt="Criando gráficos e dashboards impactantes">
+                Criando gráficos e dashboards impactantes
+              </p>
+              <span class="coming-soon-tag" data-en="Coming soon" data-pt="Em breve">Em breve</span>
+            </div>
+          </div>
+
+          <div class="content-card content-card-coming" data-category="programming">
+            <div class="content-card-image">
+              <div class="content-placeholder gradient-5">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+            </div>
+            <div class="content-card-body">
+              <span class="content-tag" data-en="Programming" data-pt="Programação">Programação</span>
+              <h3 data-en="Pandas Essentials" data-pt="Pandas Essencial">Pandas Essencial</h3>
+              <p data-en="Data manipulation with Python Pandas" data-pt="Manipulação de dados com Python Pandas">
+                Manipulação de dados com Python Pandas
+              </p>
+              <span class="coming-soon-tag" data-en="Coming soon" data-pt="Em breve">Em breve</span>
+            </div>
+          </div>
+
+          <div class="content-card content-card-coming" data-category="statistics">
+            <div class="content-card-image">
+              <div class="content-placeholder gradient-6">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M3 3v18h18"/>
+                  <path d="M18 9l-5 5-4-4-3 3"/>
+                </svg>
+              </div>
+            </div>
+            <div class="content-card-body">
+              <span class="content-tag" data-en="Statistics" data-pt="Estatística">Estatística</span>
+              <h3 data-en="A/B Testing" data-pt="Testes A/B">Testes A/B</h3>
+              <p data-en="How to run and analyze experiments" data-pt="Como executar e analisar experimentos">
+                Como executar e analisar experimentos
+              </p>
+              <span class="coming-soon-tag" data-en="Coming soon" data-pt="Em breve">Em breve</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="content-cta-section">
+      <div class="container">
+        <div class="cta-card">
+          <h2 data-en="Suggest a Course" data-pt="Sugira um Curso">Sugira um Curso</h2>
+          <p data-en="Have a topic you'd like me to cover? Send me a message with your suggestion!" data-pt="Tem algum tema que gostaria que eu abordasse? Mande uma mensagem com sua sugestão!">
+            Tem algum tema que gostaria que eu abordasse? Mande uma mensagem com sua sugestão!
+          </p>
+          <a href="https://linkedin.com/in/aruansilva" target="_blank" rel="noopener" class="cta-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+            <span data-en="Send suggestion" data-pt="Enviar sugestão">Enviar sugestão</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p data-en="© Aruan Silva 2024 • Florianópolis, Brazil" data-pt="© Aruan Silva 2024 • Florianópolis, Brasil">© Aruan Silva 2024 • Florianópolis, Brasil</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

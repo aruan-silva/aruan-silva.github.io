@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos de Dados — Aruan Silva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">AS</a>
+      <div class="nav-links">
+        <a href="index.html#about" data-en="About" data-pt="Sobre">Sobre</a>
+        <a href="projects.html" class="active" data-en="Data Projects" data-pt="Projetos de Dados">Projetos de Dados</a>
+        <a href="courses.html" data-en="Mini-Courses" data-pt="Mini-Cursos">Mini-Cursos</a>
+        <a href="articles.html" data-en="Articles" data-pt="Artigos">Artigos</a>
+        <a href="index.html#contact" data-en="Contact" data-pt="Contato">Contato</a>
+      </div>
+      <div class="lang-wrapper">
+        <span class="lang-label" data-en="Language" data-pt="Idioma">Idioma</span>
+        <div class="lang-toggle">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn active" data-lang="pt">PT</button>
+        </div>
+      </div>
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="projects-page">
+    <!-- Hero Section -->
+    <header class="page-hero">
+      <div class="container">
+        <h1 data-en="Data Projects" data-pt="Projetos de Dados">Projetos de Dados</h1>
+        <p class="page-hero-subtitle" data-en="Real projects from my experience at Nubank, Amazon, Red Ventures, and other companies" data-pt="Projetos reais da minha experiência no Nubank, Amazon, Red Ventures e outras empresas">
+          Projetos reais da minha experiência no Nubank, Amazon, Red Ventures e outras empresas
+        </p>
+      </div>
+    </header>
+
+    <!-- Featured Project -->
+    <section class="content-featured">
+      <div class="container">
+        <a href="projects/project-1.html" class="featured-card">
+          <div class="featured-image">
+            <div class="featured-placeholder gradient-1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+          </div>
+          <div class="featured-content">
+            <span class="article-category" data-en="Red Ventures" data-pt="Red Ventures">Red Ventures</span>
+            <h2 data-en="Data Pipeline Automation" data-pt="Automação de Pipelines de Dados">Automação de Pipelines de Dados</h2>
+            <p data-en="As Product Owner, I led the development of a data product that automates the creation and analysis of data pipelines, improving efficiency across the data engineering team." data-pt="Como Product Owner, liderei o desenvolvimento de um produto de dados que automatiza a criação e análise de pipelines de dados, melhorando a eficiência da equipe de engenharia de dados.">
+              Como Product Owner, liderei o desenvolvimento de um produto de dados que automatiza a criação e análise de pipelines de dados, melhorando a eficiência da equipe de engenharia de dados.
+            </p>
+            <div class="featured-meta">
+              <div class="project-tags-inline">
+                <span>Python</span>
+                <span>AWS</span>
+                <span>Looker</span>
+              </div>
+              <span class="read-more" data-en="View project →" data-pt="Ver projeto →">Ver projeto →</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="content-filter">
+      <div class="container">
+        <div class="filter-tags">
+          <button class="filter-tag active" data-filter="all" data-en="All" data-pt="Todos">Todos</button>
+          <button class="filter-tag" data-filter="nubank" data-en="Nubank" data-pt="Nubank">Nubank</button>
+          <button class="filter-tag" data-filter="amazon" data-en="Amazon" data-pt="Amazon">Amazon</button>
+          <button class="filter-tag" data-filter="redventures" data-en="Red Ventures" data-pt="Red Ventures">Red Ventures</button>
+          <button class="filter-tag" data-filter="primus" data-en="Primus Ventures" data-pt="Primus Ventures">Primus Ventures</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="content-grid-section">
+      <div class="container">
+        <div class="content-grid">
+          
+          <a href="projects/project-1.html" class="content-card" data-category="redventures">
+            <div class="content-card-image">
+              <div class="content-placeholder gradient-1">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+              </div>
+            </div>
+            <div class="content-card-body">
+              <span class="content-tag">Red Ventures</span>
+              <h3 data-en="Data Pipeline Automation" data-pt="Automação de Pipelines de Dados">Automação de Pipelines de Dados</h3>
+              <p data-en="Data product that automates the creation and analysis of data pipelines" data-pt="Produto de dados que automatiza a criação e análise de pipelines de dados">
+                Produto de dados que automatiza a criação e análise de pipelines de dados
+              </p>
+              <div class="content-tags">
+                <span>Python</span>
+                <span>AWS</span>
+                <span>ETL</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="projects/project-2.html" class="content-card" data-category="nubank">
+            <div class="content-card-image">
+              <div class="content-placeholder gradient-2">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                  <path d="M3 9h18M9 21V9"/>
+                </svg>
+              </div>
+            </div>
+            <div class="content-card-body">
+              <span class="content-tag">Nubank</span>
+              <h3 data-en="Executive Dashboards" data-pt="Dashboards Executivos">Dashboards Executivos</h3>
+              <p data-en="KPIs and OKRs monitoring dashboards for executive leadership" data-pt="Dashboards de monitoramento de KPIs e OKRs para liderança executiva">
+                Dashboards de monitoramento de KPIs e OKRs para liderança executiva
+              </p>
+              <div class="content-tags">
+                <span>Databricks</span>
+                <span>Streamlit</span>
+                <span>Python</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="projects/project-3.html" class="content-card" data-category="redventures">
+            <div class="content-card-image">
+              <div class="content-placeholder gradient-3">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="content-card-body">
+              <span class="content-tag">Red Ventures</span>
+              <h3 data-en="AWS Cost Optimization" data-pt="Otimização de Custos AWS">Otimização de Custos AWS</h3>
+              <p data-en="40% reduction in AWS storage costs through region optimization" data-pt="Redução de 40% nos custos de armazenamento AWS através de otimização de região">
+                Redução de 40% nos custos de armazenamento AWS através de otimização de região
+              </p>
+              <div class="content-tags">
+                <span>AWS</span>
+                <span>S3</span>
+                <span>Cloud</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="projects/project-4.html" class="content-card" data-category="primus">
+            <div class="content-card-image">
+              <div class="content-placeholder gradient-4">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M3 3v18h18"/>
+                  <path d="M18 9l-5 5-4-4-3 3"/>
+                </svg>
+              </div>
+            </div>
+            <div class="content-card-body">
+              <span class="content-tag">Primus Ventures</span>
+              <h3 data-en="Financial Statements Database" data-pt="Base de Dados de Balanços">Base de Dados de Balanços</h3>
+              <p data-en="Python-based database that expanded company coverage by 10x" data-pt="Base de dados em Python que expandiu a cobertura de empresas em 10x">
+                Base de dados em Python que expandiu a cobertura de empresas em 10x
+              </p>
+              <div class="content-tags">
+                <span>Python</span>
+                <span>Finance</span>
+                <span>Automation</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="projects/project-5.html" class="content-card" data-category="amazon">
+            <div class="content-card-image">
+              <div class="content-placeholder gradient-5">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="content-card-body">
+              <span class="content-tag">Amazon</span>
+              <h3 data-en="Amazon Super Program" data-pt="Programa Amazon Super">Programa Amazon Super</h3>
+              <p data-en="Wireframe development that increased product discovery by 57%" data-pt="Desenvolvimento de wireframe que aumentou a descoberta de produtos em 57%">
+                Desenvolvimento de wireframe que aumentou a descoberta de produtos em 57%
+              </p>
+              <div class="content-tags">
+                <span>Product</span>
+                <span>SQL</span>
+                <span>E-commerce</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="projects/project-6.html" class="content-card" data-category="redventures">
+            <div class="content-card-image">
+              <div class="content-placeholder gradient-6">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="content-card-body">
+              <span class="content-tag">Red Ventures</span>
+              <h3 data-en="Data Lakehouse Migration" data-pt="Migração para Data Lakehouse">Migração para Data Lakehouse</h3>
+              <p data-en="Migration from Amazon Redshift to Databricks Delta Lake architecture" data-pt="Migração do Amazon Redshift para arquitetura Databricks Delta Lake">
+                Migração do Amazon Redshift para arquitetura Databricks Delta Lake
+              </p>
+              <div class="content-tags">
+                <span>Databricks</span>
+                <span>Delta Lake</span>
+                <span>AWS</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="content-cta-section">
+      <div class="container">
+        <div class="cta-card">
+          <h2 data-en="Want to work together?" data-pt="Quer trabalhar junto?">Quer trabalhar junto?</h2>
+          <p data-en="I'm always open to discussing new projects and opportunities in data." data-pt="Estou sempre aberto a discutir novos projetos e oportunidades em dados.">
+            Estou sempre aberto a discutir novos projetos e oportunidades em dados.
+          </p>
+          <a href="index.html#contact" class="cta-btn" data-en="Get in touch" data-pt="Entre em contato">Entre em contato</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p data-en="© Aruan Silva 2024 • Florianópolis, Brazil" data-pt="© Aruan Silva 2024 • Florianópolis, Brasil">© Aruan Silva 2024 • Florianópolis, Brasil</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
