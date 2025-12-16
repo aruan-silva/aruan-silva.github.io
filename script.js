@@ -208,3 +208,12 @@ if (tocLinks.length > 0) {
   window.addEventListener('scroll', updateActiveTocLink);
   updateActiveTocLink();
 }
+
+// ===================================
+// Timeline Scroll to End (Current Position)
+// ===================================
+const timelineWrapper = document.querySelector('.timeline-wrapper');
+if (timelineWrapper) {
+  // Scroll to the end (rightmost position) to show current position
+  timelineWrapper.scrollLeft = timelineWrapper.scrollWidth;
+}
