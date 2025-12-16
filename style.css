@@ -1673,7 +1673,7 @@ a {
 .featured-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space-xl);
+  gap: var(--space-sm);
   background: var(--color-bg-white);
   border-radius: var(--radius-xl);
   overflow: hidden;
@@ -1715,7 +1715,7 @@ a {
 }
 
 .featured-content {
-  padding: var(--space-xl);
+  padding: var(--space-md);
   display: flex;
   flex-direction: column;
   justify-content: center;
